@@ -18,4 +18,14 @@ extension Dictionary {
         }
         return base
     }
+    
+    /// 所有的 Key
+    public var allKeys: [Key] {
+        keys.map { $0 }
+    }
+    
+    /// 所有的 Value
+    public var allValues: [Value] {
+        values.map { $0 }
+    }
 }

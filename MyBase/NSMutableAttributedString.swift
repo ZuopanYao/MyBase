@@ -15,7 +15,7 @@ extension NSMutableAttributedString {
     ///   - start: Int, 默认 nil,可选
     ///   - end:  Int, 默认 nil,可选
     /// - Returns: NSRange
-    public func range(_ start: Int? = nil, _ end: Int? = nil) -> NSRange {
+    public func range(_ start: Int = 0, _ end: Int? = nil) -> NSRange {
         return string.range(start, end)
     }
 }

@@ -75,15 +75,15 @@ extension String {
     
     /// 获取 NSRange
     /// - Parameters:
-    ///   - start: Int, 默认 nil,可选
-    ///   - end:  Int, 默认 nil,可选
+    ///   - start: 开始下标, 默认 0,可选
+    ///   - end:  结束下标, 默认 nil(到字符串最后),可选
     /// - Returns: NSRange
-    public func range(_ start: Int? = nil, _ end: Int? = nil) -> NSRange {
-        
-        guard let start = start, let  end = end else {
-            return NSRange(location: 0, length: count)
+    public func range(_ start: Int = 0, _ end: Int? = nil) -> NSRange {
+        var endIndex: Int = count - 1
+        if let end = end {
+            endIndex = end
         }
-        return NSRange(location: start, length: end - start)
+        return NSRange(location: start, length: endIndex - start + 1)
     }
     
     public var int: Int { Int(double) }
@@ -99,4 +99,10 @@ extension String {
         attributedString.addAttributes(attributes, range: attributesRange)
         return attributedString
     }
+    
+    /// 转为 File URL
+    public var fileURL: URL? { URL(fileURLWithPath: self) }
+    
+    /// 转为 URL
+    public var url: URL? { URL(string: self) }
 }

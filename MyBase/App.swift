@@ -105,3 +105,16 @@ public class App {
         case distribution
     }
 }
+
+/// For URL
+extension App {
+    
+    public static func canOpen(_ url: URL) -> Bool {
+        return shared.canOpenURL(url)
+    }
+    
+    public static func open(_ url: URL, options: [UIApplication.OpenExternalURLOptionsKey: Any] = [:],
+                            completionHandler completion: ((Bool) -> Void)? = nil) {
+         shared.open(url, options: options, completionHandler: completion)
+    }
+}
