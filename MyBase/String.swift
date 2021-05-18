@@ -105,4 +105,7 @@ extension String {
     
     /// 转为 URL
     public var url: URL? { URL(string: self) }
+    
+    /// 通过图片名称实例 UIImage
+    public var image: UIImage? { UIImage(named: self) }
 }

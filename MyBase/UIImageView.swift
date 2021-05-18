@@ -18,4 +18,14 @@ extension UIImageView {
         animationDuration = git.duration
         startAnimating()
     }
+    
+    /// 设置图片
+    public var imageNamed: String? {
+        get { nil }
+        set {
+            guard let newValue = newValue else { return }
+            image = newValue.image
+        }
+    }
+    
 }
