@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Common"
+  spec.name         = "MyBase"
   spec.version      = "{v}"
   spec.summary      = "iOS 开发常用封装通用库"
 
