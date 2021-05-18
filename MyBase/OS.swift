@@ -8,15 +8,19 @@
 import UIKit
 
 // swiftlint:disable:next type_name
-struct OS {
+public struct OS {
     
-    static let version: String = UIDevice.current.systemVersion
-    static let model: String = UIDevice.current.model
-    static let lang: String = NSLocale.preferredLanguages[0]
-    static let country: String = NSLocale.current.currencyCode ?? ""
+    /// 系统版本号
+    public static let version: String = UIDevice.current.systemVersion
+    /// 设备类型
+    public static let model: String = UIDevice.current.model
+    /// 系统语言
+    public static let lang: String = NSLocale.preferredLanguages[0]
+    /// 国家代号(货币代码)
+    public static let country: String = NSLocale.current.currencyCode ?? ""
     
     /// true = 手机越狱了
-    static var isJailbroken: Bool {
+    public static var isJailbroken: Bool {
         #if targetEnvironment(simulator)
         return false
         #endif
