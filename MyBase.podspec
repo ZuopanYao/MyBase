@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBase"
-  spec.version      = "0.0.9"
+  spec.version      = "0.1.0"
   spec.summary      = "iOS 开发常用封装通用库"
 
   # This description is used to generate tags and improve search results.
@@ -65,10 +65,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "12.1"
+  #spec.ios.deployment_target = "12.1"
   #spec.osx.deployment_target = "10.12"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
