@@ -8,8 +8,9 @@ if [ -z "$1" ]; then
  exit 0
 fi
 
-MODULE='Common'
+MODULE='MyBase'
 SPECS='wyspecs-ios'
+FOLDER='Common'
 
 cp podspec.example $MODULE.podspec
 REPLACE=`sed "s/{v}/$1/g" $MODULE.podspec`
@@ -32,7 +33,7 @@ cd ../$SPECS
 git pull
 
 mkdir -p $MODULE/$1
-cp ../$MODULE/$MODULE.podspec $MODULE/$1/$MODULE.podspec
+cp ../$FOLDER/$MODULE.podspec $MODULE/$1/$MODULE.podspec
 git add *
 git commit -m "$MODULE-$1"
 git push
