@@ -36,6 +36,7 @@
 		1838E04F26536A7B006D4AC0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E04E26536A7B006D4AC0 /* UIColor.swift */; };
 		1838E05226536A98006D4AC0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E05126536A98006D4AC0 /* UIView.swift */; };
 		1838E05526536AB9006D4AC0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E05426536AB9006D4AC0 /* UIButton.swift */; };
+		1838E05A26538DE3006D4AC0 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E05926538DE3006D4AC0 /* Operator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		1838E04E26536A7B006D4AC0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1838E05126536A98006D4AC0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1838E05426536AB9006D4AC0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		1838E05926538DE3006D4AC0 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				1838E03626536997006D4AC0 /* Dictionary.swift */,
 				1838E01626536534006D4AC0 /* File.swift */,
 				1838E01C26536729006D4AC0 /* Global.swift */,
+				1838E05926538DE3006D4AC0 /* Operator.swift */,
 				1838DFE626535E6D006D4AC0 /* Info.plist */,
 				1838E0232653672A006D4AC0 /* Logger.swift */,
 				1838DFE526535E6D006D4AC0 /* MyBase.h */,
@@ -324,6 +327,7 @@
 				1838E0242653672A006D4AC0 /* Notify.swift in Sources */,
 				1838E03126536917006D4AC0 /* String.swift in Sources */,
 				1838E043265369F2006D4AC0 /* Array.swift in Sources */,
+				1838E05A26538DE3006D4AC0 /* Operator.swift in Sources */,
 				1838E04626536A13006D4AC0 /* UIImage.swift in Sources */,
 				1838E02A2653672A006D4AC0 /* Queue.swift in Sources */,
 				1838E03A265369AD006D4AC0 /* URL.swift in Sources */,

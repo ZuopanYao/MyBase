@@ -13,5 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        if "JFAJRFA" ~~ "^[a-z]+$" {
+            print("ok")
+        } else {
+            print(" not jkfjdjk")
+        }
     }
 }
