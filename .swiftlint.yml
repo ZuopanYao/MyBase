@@ -1,0 +1,48 @@
+included: # 包含路径
+  - MyBase
+  
+excluded: # linting 时忽略的路径, 优先级比 `included` 高
+
+disabled_rules: # 从默认规则中禁用规则
+  - trailing_whitespace # 每一个空行不能有空格，会与Xcode换行后自动对齐生成的空格冲突，建议排除掉
+  - unused_optional_binding
+  - nesting # 类型嵌套最多1层
+  - orphaned_doc_comment # 注释要写在声明中
+  - force_cast # 强解析
+  - force_try # 强制try
+
+opt_in_rules: # 启用非默认规则
+
+type_name: # 类型名应该只包含字母数字字符， 并且以大写字母开头，长度在3-40个字符
+  min_length: # 只是警告
+      error: 3
+      warning: 3
+  max_length: # 错误
+    error: 20
+
+identifier_name: # 标识名称
+  min_length: # 
+    error: 3
+    warning: 3
+  max_length: # 错误
+    error: 30
+
+line_length: # 单行代码长度
+  error: 130
+  warning: 130
+
+large_tuple: # 元组成员数量，最多4个
+  error: 4
+  warning: 4
+
+file_length: #  文件长度
+  error: 1000
+  warning: 1000
+  
+function_body_length: # 方法体代码行数
+  error: 100
+  warning: 100
+
+cyclomatic_complexity: # 函数复杂度
+  error: 15
+  warning: 15
