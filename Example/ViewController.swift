@@ -14,10 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if "JFAJRFA" ~~ "^[a-z]+$" {
-            print("ok")
-        } else {
-            print(" not jkfjdjk")
-        }
+        print("[\("中国".md5())]")
+        print("[\("中国".md5(isUpper: true))]")
     }
 }

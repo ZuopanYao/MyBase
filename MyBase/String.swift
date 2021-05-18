@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CommonCrypto
 
 // MARK: - Extension String
 extension String {
@@ -108,4 +109,27 @@ extension String {
     
     /// 通过图片名称实例 UIImage
     public var image: UIImage? { UIImage(named: self) }
+    
+    /// MD5
+    /// - Parameters:
+    ///   - salt: 加盐, 默认为 ""
+    ///   - isUpper: 返回大写，默认为 false
+    /// - Returns: String
+    public func md5(_ salt: String = "", isUpper: Bool = false) -> String {
+        let newValue = "\(salt)\(self)"
+        let chars = newValue.cString(using: .utf8)!
+        let bytesLength = CC_LONG(newValue.lengthOfBytes(using: .utf8))
+        let digestLength = Int(CC_MD5_DIGEST_LENGTH)
+        
+        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLength)
+        CC_MD5(chars, bytesLength, result)
+        
+        var hash: String = ""
+        for index in 0..<digestLength {
+            hash.append(String(format: "%02x", result[index]))
+        }
+        
+        result.deallocate()
+        return isUpper ? hash.uppercased() : hash
+    }
 }
