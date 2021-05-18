@@ -90,3 +90,86 @@ public class File {
         prefix(data.data(using: .utf8))
     }
 }
+
+// swiftlint:disable identifier_name
+extension File {
+    
+    public struct Size {
+    
+        /// 存储单位转换
+        public enum Unit: Double {
+            /// byte
+            case byte = 1.0
+            /// KB
+            case kb = 1024.0
+            /// MB
+            case mb = 1048576.0
+            /// GB
+            case gb = 1073741824.0
+        }
+        
+        private var bytes: UInt64 = 0
+        private var filePath: String?
+        
+        public init(_ filePath: String) {
+            self.filePath = filePath
+        }
+        
+        fileprivate init(_ bytes: UInt64) {
+            self.bytes = bytes
+        }
+        
+        private func getBytes() -> UInt64 {
+            do {
+                let attributes = try FileManager.default.attributesOfItem(atPath: filePath!)
+                 return attributes[.size] as? UInt64 ?? 0
+            } catch {
+                puts(error)
+                return 0
+            }
+        }
+        
+        public func value(_ unit: Unit) -> UInt64 {
+            let doubleValue: Double = value(unit)
+            return UInt64(doubleValue)
+        }
+        
+        public func value(_ unit: Unit) -> Int {
+            let doubleValue: Double = value(unit)
+            return Int(doubleValue)
+        }
+        
+        public func value(_ unit: Unit) -> Float {
+            let doubleValue: Double = value(unit)
+            return Float(doubleValue)
+        }
+        
+        public func value(_ unit: Unit) -> Double {
+            return Double( filePath == nil ? bytes : getBytes()) / unit.rawValue
+        }
+    }
+    
+    public var size: Size { Size(self.path!) }
+}
+
+extension File.Size {
+    
+    /// 计算某个目录下所有文件总 Size
+    public static func folder(_ folderPath: String) -> File.Size {
+        
+        guard let files = FileManager.default.subpaths(atPath: folderPath) else {
+            return File.Size(0)
+        }
+        
+        var bytes: UInt64 = 0
+        files.forEach { (file) in
+            let filePath = folderPath + "/" + file
+            do {
+                let attributes = try FileManager.default.attributesOfItem(atPath: filePath)
+                bytes += attributes[.size] as? UInt64 ?? 0
+            } catch { puts(error) }
+        }
+        
+        return File.Size(bytes)
+    }
+}

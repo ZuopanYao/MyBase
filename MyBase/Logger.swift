@@ -9,8 +9,8 @@ import Foundation
 
 public class Logger {
 
-    static var isDebug: Bool = false
-    static let shared = Logger()
+    public static var isDebug: Bool = false
+    fileprivate static let shared = Logger()
     private init() {
         formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"

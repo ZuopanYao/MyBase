@@ -48,11 +48,11 @@ public class App {
     }
     
     public struct Path {
-        static let home: String = NSHomeDirectory()
-        static let temporary = NSTemporaryDirectory()
-        static let document: String = path(.documentDirectory)
-        static let library: String = path(.libraryDirectory)
-        static let cache: String = path(.cachesDirectory)
+        public static let home: String = NSHomeDirectory()
+        public static let temporary = NSTemporaryDirectory()
+        public static let document: String = path(.documentDirectory)
+        public static let library: String = path(.libraryDirectory)
+        public static let cache: String = path(.cachesDirectory)
         
         private static func path(_ directory: FileManager.SearchPathDirectory) -> String {
             return NSSearchPathForDirectoriesInDomains(directory, .userDomainMask, true).first ?? ""
@@ -60,12 +60,12 @@ public class App {
     }
     
     public struct Bundle {
-        static let resource: String = Foundation.Bundle.main.resourcePath ?? ""
-        static let executable: String = Foundation.Bundle.main.executablePath ?? ""
-        static let builtInPlug: String = Foundation.Bundle.main.builtInPlugInsPath ?? ""
-        static let framework: String = Foundation.Bundle.main.privateFrameworksPath ?? ""
-        static let sharedSupport: String = Foundation.Bundle.main.sharedSupportPath ?? ""
-        static let sharedFramework: String = Foundation.Bundle.main.sharedFrameworksPath ?? ""
+        public static let resource: String = Foundation.Bundle.main.resourcePath ?? ""
+        public static let executable: String = Foundation.Bundle.main.executablePath ?? ""
+        public static let builtInPlug: String = Foundation.Bundle.main.builtInPlugInsPath ?? ""
+        public static let framework: String = Foundation.Bundle.main.privateFrameworksPath ?? ""
+        public static let sharedSupport: String = Foundation.Bundle.main.sharedSupportPath ?? ""
+        public static let sharedFramework: String = Foundation.Bundle.main.sharedFrameworksPath ?? ""
         
         fileprivate static let embedded: String? = Foundation.Bundle.main.path(forResource: "embedded", ofType: "mobileprovision")
         
