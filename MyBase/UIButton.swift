@@ -65,22 +65,22 @@ extension UIButton {
     
     public var imageOfNormal: String {
         get { "" }
-        set { setImage(UIImage(named: newValue), for: .normal) }
+        set { setImage(newValue.image, for: .normal) }
     }
     
     public var imageOfSelect: String {
         get { "" }
-        set { setImage(UIImage(named: newValue), for: .selected) }
+        set { setImage(newValue.image, for: .selected) }
     }
     
     public var imageOfDisable: String {
         get { "" }
-        set { setImage(UIImage(named: newValue), for: .disabled) }
+        set { setImage(newValue.image, for: .disabled) }
     }
     
     public var imageOfHighlight: String {
         get { "" }
-        set { setImage(UIImage(named: newValue), for: .highlighted) }
+        set { setImage(newValue.image, for: .highlighted) }
     }
     
     /// 设置 image
@@ -100,17 +100,17 @@ extension UIButton {
         get { nil }
         set {
             guard let value = newValue else { return }
-            setImage(UIImage(named: value.normal), for: .normal)
+            setImage(value.normal.image, for: .normal)
             if let disabled = value.disabled {
-                setImage(UIImage(named: disabled), for: .disabled)
+                setImage(disabled.image, for: .disabled)
             }
             
             if let highlighted = value.highlighted {
-                setImage(UIImage(named: highlighted), for: .highlighted)
+                setImage(highlighted.image, for: .highlighted)
             }
             
             if let selected = value.selected {
-                setImage(UIImage(named: selected), for: .selected)
+                setImage(selected.image, for: .selected)
             }
         }
     }
@@ -167,24 +167,24 @@ extension UIButton {
         }
     }
     
-    public var backgroundImageOfNormal: String? {
-        get { nil }
-        set { setBackgroundImage(UIImage(named: newValue!), for: .normal) }
+    public var backgroundImageOfNormal: String {
+        get { "" }
+        set { setBackgroundImage(newValue.image, for: .normal) }
     }
     
-    public var backgroundImageOfSelect: String? {
-        get { nil }
-        set { setBackgroundImage(UIImage(named: newValue!), for: .selected) }
+    public var backgroundImageOfSelect: String {
+        get { "" }
+        set { setBackgroundImage(newValue.image, for: .selected) }
     }
     
-    public var backgroundImageOfHighlight: String? {
-        get { nil }
-        set { setBackgroundImage(UIImage(named: newValue!), for: .highlighted) }
+    public var backgroundImageOfHighlight: String {
+        get { "" }
+        set { setBackgroundImage(newValue.image, for: .highlighted) }
     }
     
-    public var backgroundImageOfDisable: String? {
-        get { nil }
-        set { setBackgroundImage(UIImage(named: newValue!), for: .disabled) }
+    public var backgroundImageOfDisable: String {
+        get { "" }
+        set { setBackgroundImage(newValue.image, for: .disabled) }
     }
     
     /// 设置背景图片
@@ -204,17 +204,17 @@ extension UIButton {
         get { nil }
         set {
             guard let value = newValue else { return }
-            setBackgroundImage(UIImage(named: value.normal), for: .normal)
+            setBackgroundImage(value.normal.image, for: .normal)
             if let disabled = value.disabled {
-                setBackgroundImage(UIImage(named: disabled), for: .disabled)
+                setBackgroundImage(disabled.image, for: .disabled)
             }
             
             if let highlighted = value.highlighted {
-                setBackgroundImage(UIImage(named: highlighted), for: .highlighted)
+                setBackgroundImage(highlighted.image, for: .highlighted)
             }
             
             if let selected = value.selected {
-                setBackgroundImage(UIImage(named: selected), for: .selected)
+                setBackgroundImage(selected.image, for: .selected)
             }
         }
     }

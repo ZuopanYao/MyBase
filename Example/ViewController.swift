@@ -16,5 +16,6 @@ class ViewController: UIViewController {
         
         print("[\("中国".md5())]")
         print("[\("中国".md5(isUpper: true))]")
+        100.time
     }
 }

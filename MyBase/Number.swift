@@ -10,8 +10,8 @@ import Foundation
 // MARK: - Extension Int
 extension Int {
     
-    /// 转成六十进制格式显示
-    var time: String {
+    /// 转成时间格式，六十进制格式显示
+    public var time: String {
         let remainderSecond = quotientAndRemainder(dividingBy: 60)
         let remainderMinute = remainderSecond.quotient.quotientAndRemainder(dividingBy: 60)
         let remainderHour = remainderMinute.quotient.quotientAndRemainder(dividingBy: 60)
