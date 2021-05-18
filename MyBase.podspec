@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBase"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.5"
   spec.summary      = "iOS 开发常用封装通用库"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  =  "Common/*.{h,swift}"
+  spec.source_files  =  "MyBase/*.{h,swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
