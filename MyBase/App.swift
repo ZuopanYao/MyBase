@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreMotion
 
 /// 获取 App 的基础信息
 public class App {
@@ -79,9 +80,9 @@ public class App {
     }
     
     public static var sign: Sign {
-        #if targetEnvironment(simulator)
-        return .off
-        #endif
+        if App.isRunOnSimulator {
+            return .off
+        }
         
         guard let path = Bundle.embedded else {
             return .appStore
@@ -117,4 +118,15 @@ extension App {
                             completionHandler completion: ((Bool) -> Void)? = nil) {
          shared.open(url, options: options, completionHandler: completion)
     }
+}
+
+extension App {
+    
+    /// true = 在模拟器上运行
+    public static let isRunOnSimulator: Bool = TARGET_IPHONE_SIMULATOR == 1
+    
+    /// true = 在 M1 芯片上运行
+    public static let isRunOnM1: Bool = {
+        CMMotionManager().isAccelerometerAvailable == false && isRunOnSimulator == false
+    }()
 }
