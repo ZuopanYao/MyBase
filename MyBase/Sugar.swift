@@ -37,6 +37,17 @@ extension Sugar where Self: NSObject {
         try sugar(instance)
         return instance
     }
+    
+    /// .init() 实例化, 无返回值
+    @inlinable public static func then(sugar: (Self) throws -> Void) rethrows {
+        let instance = Self.init()
+        try sugar(instance)
+    }
+    
+    /// 指定构造方法实例化方法，无返回值
+    @inlinable public static func then(_ instance: Self, sugar: (Self) throws -> Void) rethrows {
+        try sugar(instance)
+    }
 }
 
 extension CGRect: Sugar { }
