@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182D50332654A8920071AC89 /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D50322654A8920071AC89 /* Sugar.swift */; };
 		1838DFE726535E6D006D4AC0 /* MyBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1838DFE526535E6D006D4AC0 /* MyBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1838DFF526535E7F006D4AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838DFF426535E7F006D4AC0 /* AppDelegate.swift */; };
 		1838DFF926535E7F006D4AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838DFF826535E7F006D4AC0 /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		182D50322654A8920071AC89 /* Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
 		1838DFE226535E6D006D4AC0 /* MyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1838DFE526535E6D006D4AC0 /* MyBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBase.h; sourceTree = "<group>"; };
 		1838DFE626535E6D006D4AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				1838E03F265369D9006D4AC0 /* Date.swift */,
 				1838E03626536997006D4AC0 /* Dictionary.swift */,
 				1838E01626536534006D4AC0 /* File.swift */,
+				182D50322654A8920071AC89 /* Sugar.swift */,
 				1838E01C26536729006D4AC0 /* Global.swift */,
 				1838E05926538DE3006D4AC0 /* Operator.swift */,
 				1838DFE626535E6D006D4AC0 /* Info.plist */,
@@ -324,6 +327,7 @@
 			files = (
 				1838E03426536975006D4AC0 /* NSMutableAttributedString.swift in Sources */,
 				1838E040265369D9006D4AC0 /* Date.swift in Sources */,
+				182D50332654A8920071AC89 /* Sugar.swift in Sources */,
 				1838E0242653672A006D4AC0 /* Notify.swift in Sources */,
 				1838E03126536917006D4AC0 /* String.swift in Sources */,
 				1838E043265369F2006D4AC0 /* Array.swift in Sources */,
