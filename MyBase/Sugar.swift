@@ -12,17 +12,28 @@ public protocol Sugar { }
 
 extension Sugar where Self: Any {
     
-    @inlinable public func with(_ block: (inout Self) throws -> Void) rethrows -> Self {
+    @inlinable public func with(sugar: (inout Self) throws -> Void) rethrows -> Self {
        var copySelf = self
-       try block(&copySelf)
+       try sugar(&copySelf)
        return copySelf
      }
 }
 
 extension Sugar where Self: NSObject {
     
-    @inlinable public func `do`(_ block: (Self) throws -> Void) rethrows {
-      try block(self)
+    @inlinable public func `do`(sugar: (Self) throws -> Void) rethrows {
+      try sugar(self)
+    }
+    
+    /// .init() 实例化, 无返回值
+    @inlinable public static func `do`(sugar: (Self) throws -> Void) rethrows {
+        let instance = Self.init()
+        try sugar(instance)
+    }
+    
+    /// 指定构造方法实例化方法, 无返回值
+    @inlinable public static func `do`(_ instance: Self, sugar: (Self) throws -> Void) rethrows {
+        try sugar(instance)
     }
     
     /// .init() 实例化
@@ -36,17 +47,6 @@ extension Sugar where Self: NSObject {
     @inlinable public static func then(_ instance: Self, sugar: (Self) throws -> Void) rethrows -> Self {
         try sugar(instance)
         return instance
-    }
-    
-    /// .init() 实例化, 无返回值
-    @inlinable public static func then(sugar: (Self) throws -> Void) rethrows {
-        let instance = Self.init()
-        try sugar(instance)
-    }
-    
-    /// 指定构造方法实例化方法，无返回值
-    @inlinable public static func then(_ instance: Self, sugar: (Self) throws -> Void) rethrows {
-        try sugar(instance)
     }
 }
 
