@@ -21,9 +21,9 @@ public struct OS {
     
     /// true = 手机越狱了
     public static var isJailbroken: Bool {
-        #if targetEnvironment(simulator)
-        return false
-        #endif
+        if App.isRunOnSimulator {
+            return false
+        }
         
         let paths: [String] = [
             "/Applications/Cydia.app",

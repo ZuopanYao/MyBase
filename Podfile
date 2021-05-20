@@ -7,7 +7,6 @@ target 'Example' do
   use_frameworks!
 
   # Pods for Example
-pod 'SnapKit'
 pod 'ElegantSnap'
 end
 
@@ -16,7 +15,5 @@ target 'MyBase' do
   use_frameworks!
 
   # Pods for MyBase
-pod 'SnapKit'
 pod 'ElegantSnap'
-
 end

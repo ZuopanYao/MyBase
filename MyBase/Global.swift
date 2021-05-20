@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import CoreMotion
 
 /// 全局参数
 struct Global {
@@ -36,9 +35,4 @@ struct Global {
         guard #available(iOS 13.0, *) else { return false }
         return UITraitCollection.current.userInterfaceStyle == .dark
     }
-    
-    /// true = 在 M1 芯片上运行
-    static let isRunOnM1: Bool = {
-        return CMMotionManager().isAccelerometerAvailable == false
-    }()
 }
