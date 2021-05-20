@@ -27,25 +27,25 @@ extension Sugar where Self: NSObject {
       try sugar(self)
     }
     
-    /// .init() 实例化, 无返回值
+    /// .init() 实例化
     @inlinable public static func `do`(sugar: (Self) throws -> Void) rethrows {
         let instance = Self.init()
         try sugar(instance)
     }
     
-    /// 指定构造方法实例化方法, 无返回值
+    /// 指定构造方法实例化方法
     @inlinable public static func `do`(_ instance: Self, sugar: (Self) throws -> Void) rethrows {
         try sugar(instance)
     }
     
-    /// .init() 实例化
+    /// .init() 实例化, 带返回值
     @inlinable public static func then(sugar: (Self) throws -> Void) rethrows -> Self {
         let instance = Self.init()
         try sugar(instance)
         return instance
     }
     
-    /// 指定构造方法实例化方法
+    /// 指定构造方法实例化方法, 带返回值
     @inlinable public static func then(_ instance: Self, sugar: (Self) throws -> Void) rethrows -> Self {
         try sugar(instance)
         return instance
