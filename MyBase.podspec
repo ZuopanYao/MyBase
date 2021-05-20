@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBase"
-  spec.version      = "0.1.4"
+  spec.version      = "0.2.0"
   spec.summary      = "iOS 开发常用封装通用库"
 
   # This description is used to generate tags and improve search results.
@@ -135,6 +135,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "> 1.4"
   #spec.dependency "Alamofire", ">= 4.9.1"
-  spec.dependency "SnapKit"
+  spec.dependency "ElegantSnap", ">= 1.5.0"
   
 end
