@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ElegantSnap
 import SnapKit
 
 /// 语法糖
@@ -74,6 +75,30 @@ extension Sugar where Self: UIView {
     @inlinable public func thenMake(_ superview: UIView, sugar: (ConstraintMaker) -> Void) -> Self {
         superview.addSubview(self)
         snp.makeConstraints(sugar)
+        return self
+    }
+    
+    /// 链式添加约束
+    @inlinable public func makeChian(_ sugar: (ElegantSnap) -> Void) {
+        make(sugar)
+    }
+    
+    /// 链式添加约束, 带返回值
+    @inlinable public func thenMakeChian(_ sugar: (ElegantSnap) -> Void) -> Self {
+        make(sugar)
+        return self
+    }
+    
+    /// 链式添加约束
+    @inlinable public func makeChian(_ superview: UIView, sugar: (ElegantSnap) -> Void) {
+        superview.addSubview(self)
+        make(sugar)
+    }
+    
+    /// 链式添加约束, 带返回值
+    @inlinable public func thenMakeChian(_ superview: UIView, sugar: (ElegantSnap) -> Void) -> Self {
+        superview.addSubview(self)
+        make(sugar)
         return self
     }
 }
