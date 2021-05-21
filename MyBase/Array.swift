@@ -51,6 +51,7 @@ extension Array {
 
     /// 数组切片
     public subscript(bounds: Range<Int>) -> [Element] {
-        return prefix(bounds.upperBound).suffix(bounds.lowerBound + 1)
+        let slice: ArraySlice<Element> = self[bounds]
+        return slice.map { $0 }
     }
 }
