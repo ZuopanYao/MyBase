@@ -23,20 +23,21 @@ extension Sugar where Self: Any {
 
 extension Sugar where Self: NSObject {
     
-    @inlinable public func `do`(sugar: (Self) throws -> Void) rethrows {
-      try sugar(self)
+    @inlinable public mutating func `do`(sugar: (inout Self) throws -> Void) rethrows {
+      try sugar(&self)
     }
     
     /// .init() 实例化
-    @inlinable public static func then(sugar: (Self) throws -> Void) rethrows -> Self {
-        let instance = Self.init()
-        try sugar(instance)
+    @inlinable public static func then(sugar: (inout Self) throws -> Void) rethrows -> Self {
+        var instance = Self.init()
+        try sugar(&instance)
         return instance
     }
     
     /// 指定构造方法实例化方法
-    @inlinable public static func then(_ instance: Self, sugar: (Self) throws -> Void) rethrows -> Self {
-        try sugar(instance)
+    @inlinable public static func then(_ instance: Self, sugar: (inout Self) throws -> Void) rethrows -> Self {
+        var instance = instance
+        try sugar(&instance)
         return instance
     }
     
@@ -70,6 +71,10 @@ extension Sugar where Self: UIView {
         make(sugar)
         return self
     }
+    
+    @inlinable public func with<V: UIView>(sugar: (Self) throws -> V) rethrows -> V {
+       return try sugar(self)
+     }
 }
 
 extension CGRect: Sugar { }
