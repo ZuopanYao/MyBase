@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,7 @@
 		1838E0242653672A006D4AC0 /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E01B26536729006D4AC0 /* Notify.swift */; };
 		1838E0252653672A006D4AC0 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E01C26536729006D4AC0 /* Global.swift */; };
 		1838E0262653672A006D4AC0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E01D26536729006D4AC0 /* App.swift */; };
-		1838E0292653672A006D4AC0 /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0202653672A006D4AC0 /* OS.swift */; };
+		1838E0292653672A006D4AC0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0202653672A006D4AC0 /* Device.swift */; };
 		1838E02A2653672A006D4AC0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0212653672A006D4AC0 /* Queue.swift */; };
 		1838E02B2653672A006D4AC0 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0222653672A006D4AC0 /* Async.swift */; };
 		1838E02C2653672A006D4AC0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0232653672A006D4AC0 /* Logger.swift */; };
@@ -82,7 +82,7 @@
 		1838E01B26536729006D4AC0 /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
 		1838E01C26536729006D4AC0 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		1838E01D26536729006D4AC0 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		1838E0202653672A006D4AC0 /* OS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OS.swift; sourceTree = "<group>"; };
+		1838E0202653672A006D4AC0 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		1838E0212653672A006D4AC0 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		1838E0222653672A006D4AC0 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		1838E0232653672A006D4AC0 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				1838E01B26536729006D4AC0 /* Notify.swift */,
 				1838E03326536975006D4AC0 /* NSMutableAttributedString.swift */,
 				1838E04B26536A67006D4AC0 /* Number.swift */,
-				1838E0202653672A006D4AC0 /* OS.swift */,
+				1838E0202653672A006D4AC0 /* Device.swift */,
 				1838E0212653672A006D4AC0 /* Queue.swift */,
 				1838E03026536917006D4AC0 /* String.swift */,
 				1838E05426536AB9006D4AC0 /* UIButton.swift */,
@@ -211,7 +211,6 @@
 				88744F55B21C842D557503FD /* Pods-MyBase.debug.xcconfig */,
 				29FCCCCA229F6C0ECD6DD8EB /* Pods-MyBase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -432,7 +431,7 @@
 				1838E04C26536A67006D4AC0 /* Number.swift in Sources */,
 				1838E02B2653672A006D4AC0 /* Async.swift in Sources */,
 				1838E02C2653672A006D4AC0 /* Logger.swift in Sources */,
-				1838E0292653672A006D4AC0 /* OS.swift in Sources */,
+				1838E0292653672A006D4AC0 /* Device.swift in Sources */,
 				1838E0262653672A006D4AC0 /* App.swift in Sources */,
 				1838E05526536AB9006D4AC0 /* UIButton.swift in Sources */,
 				1838E01726536534006D4AC0 /* File.swift in Sources */,

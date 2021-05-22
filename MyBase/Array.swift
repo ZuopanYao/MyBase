@@ -54,4 +54,23 @@ extension Array {
         let slice: ArraySlice<Element> = self[bounds]
         return slice.map { $0 }
     }
+    
+    /// 从指定位置将数组分割成2个数组
+    /// - Parameter at: 分割位置在第几个元素后
+    /// - Returns: 元组
+    public func split(at: Int) -> ([Element], [Element]) {
+        // swiftlint:disable:previous identifier_name
+        return (prefix(at).map { $0 }, suffix(count - at))
+    }
+    
+    /// 从数组中间开始，往两端取元素
+    /// - Parameters:
+    ///   - count: 取多少个元素
+    ///   - isFloor: 计算下标时非偶数时取整方式，默认 true (向下取整)
+    /// - Returns: 数组
+    public func middle(count: Int, isFloor: Bool = true) -> [Element] {
+        let middleIndex = Float(self.count - count) / 2.0
+        let index = Int(isFloor ? floor(middleIndex) : ceil(middleIndex))
+        return self[index ..< index + count]
+    }
 }

@@ -33,7 +33,7 @@ extension UIView {
     ///   - target: Any
     ///   - action: 事件
     ///   - duration: 按多长时间触发, 默认 0.5, 单位： 秒
-    public func longTap(target: Any, action: Selector, duration: TimeInterval = 0.5) {
+    public func longPress(target: Any, action: Selector, duration: TimeInterval = 0.5) {
         LongPress.store[self] = (target, action, true)
         isUserInteractionEnabled = true
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
@@ -57,14 +57,14 @@ extension UIView {
         }
     }
     
-    // swiftlint:disable:next identifier_name
     public var x: CGFloat {
+        // swiftlint:disable:previous identifier_name
         get { frame.origin.x }
         set { frame = CGRect(origin: CGPoint(x: newValue, y: frame.origin.y), size: frame.size) }
     }
     
-    // swiftlint:disable:next identifier_name
     public var y: CGFloat {
+        // swiftlint:disable:previous identifier_name
         get { frame.origin.y }
         set { frame = CGRect(origin: CGPoint(x: frame.origin.x, y: newValue), size: frame.size) }
     }
