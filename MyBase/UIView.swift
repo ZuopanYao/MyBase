@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 // MARK: - Extension UIKit - UIView
 extension UIView {
@@ -21,7 +23,7 @@ extension UIView {
         let tap = UITapGestureRecognizer(target: target, action: action)
         addGestureRecognizer(tap)
     }
-    
+
     private struct LongPress {
         static var store: [NSObject: (target: Any, action: Selector, isCanCall: Bool)] = [:]
     }
@@ -140,3 +142,42 @@ extension UIView {
         }
     }
 }
+
+private let actionSubject: PublishSubject<NSObject> = .init()
+private let disposeBag: DisposeBag = .init()
+
+public protocol RxAction { }
+
+extension RxAction where Self: UIView {
+    
+    /// 语法糖 - 点击事件
+    public var click: ((RxSwift.Event<Self>) -> Void)? {
+        get { nil }
+        set {
+            if self.isKind(of: UIButton.self) {
+                (self as! UIButton).rx.tap
+                    .map { self }
+                    .subscribe(newValue!)
+                    .disposed(by: disposeBag)
+                return
+            }
+            
+            isUserInteractionEnabled = true
+            addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapWithCall(sender:))))
+            
+            actionSubject
+                .filter { $0 == self }
+                .compactMap { $0 as? Self }
+                .subscribe(newValue!).disposed(by: disposeBag)
+        }
+    }
+}
+
+extension UIView {
+    
+    @objc fileprivate func tapWithCall(sender: UITapGestureRecognizer) {
+        actionSubject.onNext(self)
+    }
+}
+
+extension NSObject: RxAction { }
