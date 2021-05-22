@@ -18,28 +18,32 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        UIButton.then {
-            $0.titleOfNormal = "按钮"
-            $0.titleColorOfNormal = .red
-            $0.click = dodobtn
-        }.makeChian(view) {
-            $0.top(100).leading(20).width(100).height(40).end()
-        }.end()
-                
-        UILabel.then {
-            $0.text = "test"
-            $0.textColor = .red
-            $0.click = dodolab
-        }.makeChian(view) {
-            $0.top(200).leading(20).width(100).height(40).end()
-        }.end()
         
-       // view.click = dodo
-
-        view.longPress(duration: 2.0) {
-            self.dodo(event: nil)
+        async(delay: 1.0) {
+            puts(Global.isNotchScreen)
         }
+        
+        UIView.then {
+            $0.backgroundColor = .blue
+        }.makeChian(view) {
+            $0.top(100).leading().width().height(300).end()
+        }.with { bgView in
+            UILabel.then {
+                $0.text = "广西"
+                $0.textColor = .yellow
+            }.makeChian(bgView) {
+                $0.top().leading().trailing().height(40).end()
+            }.with { label in
+                UIButton.then {
+                    $0.backgroundColor = .green
+                    $0.titleOfNormal = "kdkdkdk"
+                    $0.titleColorOfNormal = .red
+                }.makeChian(bgView) {
+                    $0.top(label.snp.bottom, 30)
+                        .leading().trailing().height(40).end()
+                }
+            }
+        }.end()
     }
     
     @objc func dodo(event: Any?){

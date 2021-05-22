@@ -1,6 +1,6 @@
 //
 //  Global.swift
-//  FreeVPN
+//  
 //
 //  Created by Harvey on 2021/4/27.
 //
