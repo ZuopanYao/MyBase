@@ -25,7 +25,7 @@ extension UIView {
     }
 
     private struct LongPress {
-        static var store: [NSObject: (target: Any, action: Selector, isCanCall: Bool)] = [:]
+        static var store: [NSObject: (call: () -> Void, isCanCall: Bool)] = [:]
     }
     
     /// 长按事件
@@ -33,8 +33,8 @@ extension UIView {
     ///   - target: Any
     ///   - action: 事件
     ///   - duration: 按多长时间触发, 默认 0.5, 单位： 秒
-    public func longPress(target: Any, action: Selector, duration: TimeInterval = 0.5) {
-        LongPress.store[self] = (target, action, true)
+    public func longPress(duration: TimeInterval = 0.5, closure: @escaping () -> Void) {
+        LongPress.store[self] = (closure, true)
         isUserInteractionEnabled = true
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
         longPress.minimumPressDuration = duration
@@ -42,14 +42,9 @@ extension UIView {
     }
     
     @objc private func handleLongPress(_ longPress: UILongPressGestureRecognizer) {
-        let longTap = LongPress.store[self]!
-        if longTap.isCanCall {
+        if LongPress.store[self]!.isCanCall {
             LongPress.store[self]!.isCanCall = false
-            typealias Call = @convention(c) (Any, Selector, UILongPressGestureRecognizer) -> Void
-            let method = class_getInstanceMethod(object_getClass(longTap.target), longTap.action)!
-            let imp = method_getImplementation(method)
-            let call = unsafeBitCast(imp, to: Call.self)
-            call(longTap.target, longTap.action, longPress)
+            LongPress.store[self]!.call()
         }
         switch longPress.state {
         case .ended: LongPress.store[self]!.isCanCall = true

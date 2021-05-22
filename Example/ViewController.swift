@@ -37,10 +37,12 @@ class ViewController: UIViewController {
         
        // view.click = dodo
 
-        view.longPress(target: self, action: #selector(dodo(event:)))
+        view.longPress(duration: 2.0) {
+            self.dodo(event: nil)
+        }
     }
     
-    @objc func dodo(event: Any){
+    @objc func dodo(event: Any?){
         puts("kkkkk ----")
     }
     
