@@ -10,18 +10,12 @@ import Foundation
 public class Logger {
 
     public static var isDebug: Bool = false
-    fileprivate static let shared = Logger()
-    private init() {
-        formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-    }
-
-    fileprivate let formatter: DateFormatter
-    fileprivate var dateString: String {
-        return formatter.string(from: Date())
-    }
-    
     public static var saveHandler: ((_ value: String) -> Void)?
+
+    fileprivate static let shared = Logger()
+    private init() { }
+
+    fileprivate var dateString: String { Date().format(.full) }
 }
 
 /// 自定义打印函数
