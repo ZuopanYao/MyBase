@@ -15,4 +15,7 @@ extension Data {
         copyBytes(to: &keyByte, count: count)
         return keyByte
     }
+    
+    /// to String with UTF-8 encoding
+    public var string: String? { String(data: self, encoding: .utf8) }
 }

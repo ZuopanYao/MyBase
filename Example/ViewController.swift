@@ -12,6 +12,12 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
+struct Model: Codable {
+    var name: String = ""
+    var age: Int = 100
+    init() { }
+}
+
 class ViewController: UIViewController {
     
     let disposeBag: DisposeBag = .init()
@@ -21,6 +27,16 @@ class ViewController: UIViewController {
         
         async(delay: 1.0) {
             puts(Global.isNotchScreen)
+        }
+        
+    
+        let m = Model()
+        let data = m.encode!
+        puts(data)
+        
+        async(delay: 1.0) {
+            let mmm = Model.decode(data)!
+            
         }
         
         UIView.then {

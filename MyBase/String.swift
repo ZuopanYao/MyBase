@@ -132,4 +132,7 @@ extension String {
         result.deallocate()
         return isUpper ? hash.uppercased() : hash
     }
+    
+    /// to Data with UTF-8 encoding
+    public var data: Data? { data(using: .utf8) }
 }
