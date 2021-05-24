@@ -26,7 +26,7 @@ extension Decodable {
     static public func decode(_ from: Data) -> Self? {
         do {
             return try JSONDecoder().decode(Self.self, from: from)
-        } catch { print(error) }
+        } catch { puts(error) }
         return nil
     }
 }
