@@ -22,12 +22,21 @@ public struct Global {
     /// 如果是 iPad
     public static let isPad = UIDevice.current.userInterfaceIdiom == .pad
     
+    /// true = 刘海屏, Bug: 在根视图的 ViewDidLoad 中使用永远为 false
+//    public static let isNotchScreen: Bool = {
+//        guard let keyWindow = App.shared.keyWindow else {
+//            return false
+//        }
+//        return keyWindow.safeAreaInsets.bottom > 0
+//    }()
+    
     /// true = 刘海屏
     public static let isNotchScreen: Bool = {
-        guard let keyWindow = App.shared.keyWindow else {
-            return false
-        }
-        return keyWindow.safeAreaInsets.bottom > 0
+        if isPad { return false }
+        let size = UIScreen.main.bounds.size
+        let notchValue: Int = Int(size.width/size.height * 100)
+        if 216 == notchValue || 46 == notchValue { return true }
+        return false
     }()
     
     /// true = 黑暗模式
