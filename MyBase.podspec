@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBase"
-  spec.version      = "0.3.0"
+  spec.version      = "0.3.1"
   spec.summary      = "iOS 开发常用封装通用库"
 
   # This description is used to generate tags and improve search results.
@@ -136,5 +136,6 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "> 1.4"
   #spec.dependency "Alamofire", ">= 4.9.1"
   spec.dependency "ElegantSnap", ">= 1.5.0"
-  
+  spec.dependency "RxCocoa"
+
 end
