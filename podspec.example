@@ -136,5 +136,6 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "> 1.4"
   #spec.dependency "Alamofire", ">= 4.9.1"
   spec.dependency "ElegantSnap", ">= 1.5.0"
-  
+  spec.dependency "RxCocoa"
+
 end
