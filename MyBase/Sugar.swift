@@ -27,6 +27,10 @@ extension Sugar where Self: NSObject {
       try sugar(&self)
     }
     
+    @inlinable public mutating func `do`<T: NSObject>(sugar: (inout Self) throws -> T) rethrows -> T {
+      return try sugar(&self)
+    }
+    
     /// .init() 实例化
     @inlinable public static func then(sugar: (inout Self) throws -> Void) rethrows -> Self {
         var instance = Self.init()
