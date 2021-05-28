@@ -10,6 +10,12 @@ import UIKit
 // MARK: - Extension UIKit - UIButton
 extension UIButton {
     
+    /// 需要设置 title 后设置字体才生效
+    public var font: UIFont? {
+        get { titleLabel?.font }
+        set { titleLabel?.font = newValue }
+    }
+    
     public var titleOfNormal: String? {
         get { title(for: .normal) }
         set { setTitle(newValue, for: .normal) }
