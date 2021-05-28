@@ -136,3 +136,12 @@ extension String {
     /// to Data with UTF-8 encoding
     public var data: Data? { data(using: .utf8) }
 }
+
+extension String {
+    
+    /// 本地时间时间转换成时间戳
+    public func timeIntervalSince1970(_ format: Date.Format = .middle) -> TimeInterval {
+        Date.formatter.dateFormat = format.rawValue
+        return Date.formatter.date(from: self)?.timeIntervalSince1970 ?? 0.0
+    }
+}
