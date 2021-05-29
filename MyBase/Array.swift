@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Extension Array
+
 extension Array where Element: SignedInteger {
     
     /// 数组求和
@@ -44,6 +45,19 @@ extension Array where Element == Double {
     /// 数组平均值
     public func avg() -> Element {
         return sum() / Element(count)
+    }
+}
+
+extension Array where Element == Int {
+    
+    /// Stride
+    public var stride: [Element] {
+        Swift.stride(from: self[0], to: self[1], by: self[2]).map { $0 }
+    }
+    
+    /// Stride with through
+    public var through: [Element] {
+        Swift.stride(from: self[0], through: self[1], by: self[2]).map { $0 }
     }
 }
 
@@ -91,5 +105,27 @@ extension Array {
         let middleIndex = Float(self.count - count) / 2.0
         let index = Int(isFloor ? floor(middleIndex) : ceil(middleIndex))
         return self[index ..< index + count]
+    }
+    
+    /// 数组切片
+    /// - Parameters:
+    ///     - rangeIndexs: [Range<Int>]，区间分割下标
+    ///
+    /// - Returns: [[Element]]
+    ///
+    /// # Example
+    ///
+    ///     let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    ///     let results = array.split(with: [0..<3, 3..<5, 5..<7, 7..<array.count])
+    ///     print(results[0]) /// [1, 2, 3]
+    ///     print(results[1]) /// [4, 5]
+    ///     print(results[2]) /// [6, 7]
+    ///     print(results[3]) /// [8, 9, 10]
+    public func split(with rangeIndexs: [Range<Int>]) -> [[Element]] {
+        var resluts: [[Element]] = []
+        rangeIndexs.forEach {
+            resluts.append(self[$0])
+        }
+        return resluts
     }
 }
