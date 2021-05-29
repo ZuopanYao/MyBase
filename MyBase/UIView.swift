@@ -106,11 +106,11 @@ extension UIView {
     ///     let view = UIView()
     ///     view.border = (50.0, nil)
     ///     // view.border = (50.0, UIColor.red.cgColor)
-    public var border: (width: CGFloat, color: CGColor?) {
-        get { (layer.borderWidth, layer.borderColor) }
+    public var border: (width: CGFloat, color: UIColor?) {
+        get { (layer.borderWidth, layer.borderColor.map { UIColor(cgColor: $0) }) }
         set {
             layer.borderWidth = newValue.width
-            layer.borderColor = newValue.color
+            layer.borderColor = newValue.color?.cgColor
         }
     }
     
@@ -127,10 +127,10 @@ extension UIView {
     ///
     ///     let view = UIView()
     ///     view.shadow = (UIColor.red.cgColor, .zero, 10.0, 1.0)
-    public var shadow: (color: CGColor?, offset: CGSize?, radius: CGFloat?, opacity: Float) {
-        get { (layer.shadowColor, layer.shadowOffset, layer.shadowRadius, layer.shadowOpacity) }
+    public var shadow: (color: UIColor?, offset: CGSize?, radius: CGFloat?, opacity: Float) {
+        get { (layer.shadowColor.map { UIColor(cgColor: $0) }, layer.shadowOffset, layer.shadowRadius, layer.shadowOpacity) }
         set {
-            layer.shadowColor = newValue.color
+            layer.shadowColor = newValue.color?.cgColor
             layer.shadowOpacity = newValue.opacity
             if let offset = newValue.offset { layer.shadowOffset = offset }
             if let radius = newValue.radius { layer.shadowRadius = radius }

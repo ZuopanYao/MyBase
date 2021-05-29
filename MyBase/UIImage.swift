@@ -37,4 +37,9 @@ extension UIImage {
        
         return (images, totalDuration)
     }
+    
+    /// 转为 UIColor
+    public var color: UIColor {
+        UIColor(patternImage: self)
+    }
 }
