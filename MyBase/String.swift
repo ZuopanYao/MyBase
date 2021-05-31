@@ -144,4 +144,10 @@ extension String {
         Date.formatter.dateFormat = format.rawValue
         return Date.formatter.date(from: self)?.timeIntervalSince1970 ?? 0.0
     }
+    
+    /// 本地时间时间转换成 Date
+    public func date(_ format: Date.Format = .middle) -> Date? {
+        Date.formatter.dateFormat = format.rawValue
+        return Date.formatter.date(from: self)
+    }
 }
