@@ -24,42 +24,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        var date = Date(timeIntervalSince1970: 1621699200)
+        print(date.weekDay == .sun)
         
-        async(delay: 1.0) {
-            puts(Global.isNotchScreen)
-        }
+        date = Date(timeIntervalSince1970: 1621785600)
+        print(date.weekDay == .mon)
         
-    
-        let m = Model()
-        let data = m.encode!
-        puts(data)
+        date = Date(timeIntervalSince1970: 1621872000)
+        print(date.weekDay == .tue)
         
-        async(delay: 1.0) {
-            let mmm = Model.decode(data)!
-            
-        }
+        date = Date(timeIntervalSince1970: 1621958400)
+        print(date.weekDay == .wed)
         
-        UIView.then {
-            $0.backgroundColor = .blue
-        }.makeChian(view) {
-            $0.top(100).leading().width().height(300).end()
-        }.with { bgView in
-            UILabel.then {
-                $0.text = "广西"
-                $0.textColor = .yellow
-            }.makeChian(bgView) {
-                $0.top().leading().trailing().height(40).end()
-            }.with { label in
-                UIButton.then {
-                    $0.backgroundColor = .green
-                    $0.titleOfNormal = "kdkdkdk"
-                    $0.titleColorOfNormal = .red
-                }.makeChian(bgView) {
-                    $0.top(label.snp.bottom, 30)
-                        .leading().trailing().height(40).end()
-                }
-            }
-        }.end()
+        date = Date(timeIntervalSince1970: 1622044800)
+        print(date.weekDay == .thur)
+        
+        date = Date(timeIntervalSince1970: 1622131200)
+        print(date.weekDay == .fri)
+        
+        date = Date(timeIntervalSince1970: 1622217600)
+        print(date.weekDay == .sat)
+        
     }
     
     @objc func dodo(event: Any?){

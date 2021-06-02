@@ -38,6 +38,7 @@
 		1838E05226536A98006D4AC0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E05126536A98006D4AC0 /* UIView.swift */; };
 		1838E05526536AB9006D4AC0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E05426536AB9006D4AC0 /* UIButton.swift */; };
 		1838E05A26538DE3006D4AC0 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E05926538DE3006D4AC0 /* Operator.swift */; };
+		1848842826678B0B00021D53 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848842726678B0B00021D53 /* Any.swift */; };
 		7694FEB15D7DDBCFF136976D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDB680DB939A307352F5B2A /* Pods_Example.framework */; };
 		B9BDB2E0265945F7003310B7 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BDB2DF265945F7003310B7 /* Codable.swift */; };
 		BA5F3C3487577F5B7376F9E6 /* Pods_MyBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CBDDC8A7076A64B11635C1 /* Pods_MyBase.framework */; };
@@ -101,6 +102,7 @@
 		1838E05126536A98006D4AC0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1838E05426536AB9006D4AC0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		1838E05926538DE3006D4AC0 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		1848842726678B0B00021D53 /* Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Any.swift; sourceTree = "<group>"; };
 		29FCCCCA229F6C0ECD6DD8EB /* Pods-MyBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBase.release.xcconfig"; path = "Target Support Files/Pods-MyBase/Pods-MyBase.release.xcconfig"; sourceTree = "<group>"; };
 		2C2AB71D9601016A781EF156 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		50CBDDC8A7076A64B11635C1 /* Pods_MyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 				1838E04526536A13006D4AC0 /* UIImage.swift */,
 				1838E04826536A1E006D4AC0 /* UIImageView.swift */,
 				1838E05126536A98006D4AC0 /* UIView.swift */,
+				1848842726678B0B00021D53 /* Any.swift */,
 				1838E039265369AD006D4AC0 /* URL.swift */,
 			);
 			path = MyBase;
@@ -424,6 +427,7 @@
 				1838E03126536917006D4AC0 /* String.swift in Sources */,
 				1838E043265369F2006D4AC0 /* Array.swift in Sources */,
 				1838E05A26538DE3006D4AC0 /* Operator.swift in Sources */,
+				1848842826678B0B00021D53 /* Any.swift in Sources */,
 				1838E04626536A13006D4AC0 /* UIImage.swift in Sources */,
 				1838E02A2653672A006D4AC0 /* Queue.swift in Sources */,
 				1838E03A265369AD006D4AC0 /* URL.swift in Sources */,
