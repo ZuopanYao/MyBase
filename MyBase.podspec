@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBase"
-  spec.version      = "0.3.8"
+  spec.version      = "0.3.9"
   spec.summary      = "iOS 开发常用封装通用库"
 
   # This description is used to generate tags and improve search results.
