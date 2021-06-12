@@ -24,27 +24,44 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        var date = Date(timeIntervalSince1970: 1621699200)
-        print(date.weekDay == .sun)
         
-        date = Date(timeIntervalSince1970: 1621785600)
-        print(date.weekDay == .mon)
+        //        if "hello" + "world" ~~ "^[a-z]+$" {
+        //            print("it's ok")
+        //        } else {
+        //            print("it's error")
+        //        }
+        //
         
-        date = Date(timeIntervalSince1970: 1621872000)
-        print(date.weekDay == .tue)
+        let value: Float? = nil
+        // (view.backgroundColor = .red) <-- isValue(value) --> (view.backgroundColor = .blue)
         
-        date = Date(timeIntervalSince1970: 1621958400)
-        print(date.weekDay == .wed)
+        print("it's error join") <-- isValue(value) --> print("it's OK join")
+        isValue(value) <-- print("it's error signle")
+        isValue(value) --> print("it's ok signle")
         
-        date = Date(timeIntervalSince1970: 1622044800)
-        print(date.weekDay == .thur)
+        if isValue(value) { print("it's error signle") }
         
-        date = Date(timeIntervalSince1970: 1622131200)
-        print(date.weekDay == .fri)
+        //        let name = myName(optional: value, defaultValue: 10.0)
+        //        let name1 = myName1(optional: value, defaultValue: { 10.0 })
+        //
+        //        value == nil ? false : true
+        //
+        //        let state = value == nil
+        //
+        print(2*2 <> 3*2)
+        print(2*2 <<>> 3*2)
         
-        date = Date(timeIntervalSince1970: 1622217600)
-        print(date.weekDay == .sat)
+        print(4/2 <> 6/2)
+        print(4/2 <<>> 6/2)
+        
+        print(2 + 1 <> 3 + 1)
+        print(2 + 1 <<>> 3 + 1)
+        
+        print(4 - 1 <> 3 - 1)
+        print(2 - 1 <<>> 3 - 1)
+        
+        print(24 - 4 + 3 / 3 <> 3)
+        print(2 <<>> 3)
         
     }
     
@@ -59,4 +76,37 @@ class ViewController: UIViewController {
     func dodobtn(event: Event<UIButton>){
         puts("UIButton\(event.element!)")
     }
+}
+
+infix operator <--: LogicalDisjunctionPrecedence
+infix operator -->: LogicalDisjunctionPrecedence
+
+func --> (condition: Bool, closure: @autoclosure () -> Void) {
+    if condition {
+        closure()
+    }
+}
+
+func <-- (condition: Bool, closure: @autoclosure () -> Void) {
+    if condition == false {
+        closure()
+    }
+}
+
+func <-- (closure: @autoclosure () -> Void, condition: Bool) -> Bool {
+    if condition == false {
+        closure()
+    }
+    return condition
+}
+
+infix operator <>: AssignmentPrecedence
+infix operator <<>>: AssignmentPrecedence
+
+func <> <T: Numeric>(iPhone: T, iPad: T) -> T {
+    return iPhone * iPad
+}
+
+func <<>> <T: Numeric>(iPhone: T, iPad: T) -> T {
+    return iPhone + iPad
 }
