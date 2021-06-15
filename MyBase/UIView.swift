@@ -176,3 +176,14 @@ extension UIView {
 }
 
 extension NSObject: RxAction { }
+
+extension UIView {
+    
+    /// Snapshot 对已显示在屏幕上的内容进行截图快照
+    public var snapshot: UIImage? {
+        defer { UIGraphicsEndImageContext() }
+        UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, UIScreen.main.scale)
+        drawHierarchy(in: bounds, afterScreenUpdates: true)
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+}

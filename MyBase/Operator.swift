@@ -8,8 +8,8 @@
 import Foundation
 
 infix operator ~~: ComparisonPrecedence
-infix operator <>: LogicalDisjunctionPrecedence
-infix operator <!>: LogicalDisjunctionPrecedence
+infix operator <--: LogicalDisjunctionPrecedence
+infix operator -->: LogicalDisjunctionPrecedence
 
 /// 正则表达式匹配
 public func ~~ (origin: String, regular: String) -> Bool {
@@ -18,12 +18,21 @@ public func ~~ (origin: String, regular: String) -> Bool {
     return predicate.evaluate(with: origin)
 }
 
-/// 当 condition 为 true 时， 执行 closure
-public func <> (condition: Bool, closure: () -> Void) {
-    condition ? closure() : nil
+public func --> (condition: Bool, closure: @autoclosure () -> Void) {
+    if condition {
+        closure()
+    }
 }
 
-/// 当 condition 为 false 时， 执行 closure
-public func <!> (condition: Bool, closure: () -> Void) {
-    condition ? nil : closure()
+public func <-- (condition: Bool, closure: @autoclosure () -> Void) {
+    if condition == false {
+        closure()
+    }
+}
+
+public func <-- (closure: @autoclosure () -> Void, condition: Bool) -> Bool {
+    if condition == false {
+        closure()
+    }
+    return condition
 }

@@ -19,3 +19,21 @@ target 'MyBase' do
 pod 'ElegantSnap'
 pod 'RxCocoa'
 end
+
+post_install do |installer|
+    # config pods_project
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings['SWIFT_SUPPRESS_WARNINGS'] = 'YES'
+      if config.name == 'Debug'
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      end
+  end
+    
+    # config each target of pods_project
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+           config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      end
+    end
+end

@@ -9,12 +9,15 @@ import Foundation
 
 // MARK: - Extension Array
 
-extension Array where Element: SignedInteger {
+extension Array where Element: Numeric {
     
     /// 数组求和
     public func sum() -> Element {
         return reduce(0, { $0 + $1 })
     }
+}
+
+extension Array where Element: SignedInteger {
     
     /// 数组平均值
     public func avg() -> Element {
@@ -22,25 +25,7 @@ extension Array where Element: SignedInteger {
     }
 }
 
-extension Array where Element == Float {
-    
-    /// 数组求和
-    public func sum() -> Element {
-        return reduce(0.0, { $0 + $1 })
-    }
-    
-    /// 数组平均值
-    public func avg() -> Element {
-        return sum() / Element(count)
-    }
-}
-
-extension Array where Element == Double {
-    
-    /// 数组求和
-    public func sum() -> Element {
-        return reduce(0.0, { $0 + $1 })
-    }
+extension Array where Element: FloatingPoint {
     
     /// 数组平均值
     public func avg() -> Element {
