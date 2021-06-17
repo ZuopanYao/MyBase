@@ -140,6 +140,7 @@ extension UIView {
 
 private let actionSubject: PublishSubject<NSObject> = .init()
 private let disposeBag: DisposeBag = .init()
+private var registerStore: [NSObject] = []
 
 public protocol RxAction { }
 
@@ -149,6 +150,11 @@ extension RxAction where Self: UIView {
     public var click: ((RxSwift.Event<Self>) -> Void)? {
         get { nil }
         set {
+            if registerStore.contains(self) {
+                return
+            }
+            registerStore.append(self)
+            
             if self.isKind(of: UIButton.self) {
                 (self as! UIButton).rx.tap
                     .map { self }

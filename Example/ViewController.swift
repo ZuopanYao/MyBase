@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .blue
         
         //        if "hello" + "world" ~~ "^[a-z]+$" {
         //            print("it's ok")
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
         let value: Float? = nil
         // (view.backgroundColor = .red) <-- isValue(value) --> (view.backgroundColor = .blue)
         
-        print("it's error join") <-- isValue(value) --> print("it's OK join")
+        print("it's error join") <-- isValue(value) == true --> print("it's OK join")
         isValue(value) <-- print("it's error signle")
         isValue(value) --> print("it's ok signle")
         
@@ -63,6 +64,9 @@ class ViewController: UIViewController {
         print(24 - 4 + 3 / 3 <> 3)
         print(2 <<>> 3)
         
+        let sum: Int = [34, 44].avg()
+    
+        
     }
     
     @objc func dodo(event: Any?){
@@ -76,28 +80,6 @@ class ViewController: UIViewController {
     func dodobtn(event: Event<UIButton>){
         puts("UIButton\(event.element!)")
     }
-}
-
-infix operator <--: LogicalDisjunctionPrecedence
-infix operator -->: LogicalDisjunctionPrecedence
-
-func --> (condition: Bool, closure: @autoclosure () -> Void) {
-    if condition {
-        closure()
-    }
-}
-
-func <-- (condition: Bool, closure: @autoclosure () -> Void) {
-    if condition == false {
-        closure()
-    }
-}
-
-func <-- (closure: @autoclosure () -> Void, condition: Bool) -> Bool {
-    if condition == false {
-        closure()
-    }
-    return condition
 }
 
 infix operator <>: AssignmentPrecedence
