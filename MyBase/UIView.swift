@@ -30,14 +30,15 @@ extension UIView {
     
     /// 长按事件
     /// - Parameters:
-    ///   - target: Any
-    ///   - action: 事件
-    ///   - duration: 按多长时间触发, 默认 0.5, 单位： 秒
-    public func longPress(duration: TimeInterval = 0.5, closure: @escaping () -> Void) {
+    ///   - duration: 按下多长时间触发，默认 0.5, 单位： 秒
+    ///   - touches: 按下手指个数，默认 1
+    ///   - closure: 事件
+    public func longPress(duration: TimeInterval = 0.5, touches: Int = 1, closure: @escaping () -> Void) {
         LongPress.store[self] = (closure, true)
         isUserInteractionEnabled = true
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
         longPress.minimumPressDuration = duration
+        longPress.numberOfTouchesRequired = touches
         addGestureRecognizer(longPress)
     }
     
