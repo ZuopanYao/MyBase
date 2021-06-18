@@ -145,7 +145,7 @@ extension File {
         }
         
         public func value(_ unit: Unit) -> Double {
-            return Double( filePath == nil ? bytes : getBytes()) / unit.rawValue
+            return Double(filePath == nil ? bytes : getBytes()) / unit.rawValue
         }
     }
     
