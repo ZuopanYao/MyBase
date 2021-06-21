@@ -1,16 +1,16 @@
 //
 //  Network.swift
-//  StudyDemo
+//  MyBase
 //
 //  Created by Harvey on 2021/6/20.
 //
 
 import Foundation
 
-struct Network {
+public struct Network {
     
     /// 局域网 IP
-    static var lanIP: String {
+    public static var lanIP: String {
         
         var address: String = ""
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
@@ -20,7 +20,6 @@ struct Network {
         }
         
         var ptr = ifaddr
-        // swiftlint:disable:next exclamation
         while ptr != nil {
             defer { ptr = ptr!.pointee.ifa_next }
             
@@ -47,7 +46,8 @@ struct Network {
         return address
     }
     
-    static var internetIP: String {
-        return ((try? String(contentsOf: URL(string: "https://icanhazip.com")!, encoding: .utf8)) ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+    public static var internetIP: String {
+        return ((try? String(contentsOf: URL(string: "https://icanhazip.com")!, encoding: .utf8)) ?? "")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

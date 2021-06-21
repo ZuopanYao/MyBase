@@ -91,23 +91,10 @@ public class File {
     }
 }
 
-// swiftlint:disable identifier_name
 extension File {
     
     public struct Size {
     
-        /// 存储单位转换
-        public enum Unit: Double {
-            /// byte
-            case byte = 1.0
-            /// KB
-            case kb = 1024.0
-            /// MB
-            case mb = 1048576.0
-            /// GB
-            case gb = 1073741824.0
-        }
-        
         private var bytes: UInt64 = 0
         private var filePath: String?
         
@@ -128,24 +115,24 @@ extension File {
                 return 0
             }
         }
+//
+//        public func value(_ unit: Unit) -> UInt64 {
+//            let doubleValue: Double = value(unit)
+//            return UInt64(doubleValue)
+//        }
+//
+//        public func value(_ unit: Unit) -> Int {
+//            let doubleValue: Double = value(unit)
+//            return Int(doubleValue)
+//        }
+//
+//        public func value(_ unit: Unit) -> Float {
+//            let doubleValue: Double = value(unit)
+//            return Float(doubleValue)
+//        }
         
-        public func value(_ unit: Unit) -> UInt64 {
-            let doubleValue: Double = value(unit)
-            return UInt64(doubleValue)
-        }
-        
-        public func value(_ unit: Unit) -> Int {
-            let doubleValue: Double = value(unit)
-            return Int(doubleValue)
-        }
-        
-        public func value(_ unit: Unit) -> Float {
-            let doubleValue: Double = value(unit)
-            return Float(doubleValue)
-        }
-        
-        public func value(_ unit: Unit) -> Double {
-            return Double(filePath == nil ? bytes : getBytes()) / unit.rawValue
+        public var unit: Hardware.Unit {
+            return .init(filePath == nil ? bytes : getBytes())
         }
     }
     

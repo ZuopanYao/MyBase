@@ -1,6 +1,7 @@
+// swiftlint:disable identifier_name
 //
 //  Hardware.swift
-//  StudyDemo
+//  MyBase
 //
 //  Created by Harvey on 2021/5/16.
 //
@@ -9,6 +10,7 @@ import Foundation
 
 public struct Hardware {
     
+    /// 存储单位转换
     public struct Unit {
         
         public static var radix: Double = 1024.0
@@ -85,9 +87,6 @@ extension Hardware {
             return ""
         }
         
-        let data = Data(bytes: &buffer, count: size)
-        let result = String(data: data, encoding: .utf8) ?? ""
-        let lenght = buffer.filter({ $0 > 2 }).count
-        return "\(result.prefix(lenght))"
+        return String(cString: buffer)
     }
 }
