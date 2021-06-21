@@ -5,7 +5,7 @@
 //  Created by Harvey on 2021/5/18.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Extension Int
 extension Int {
@@ -26,4 +26,22 @@ extension Int {
         
         return String(format: "%02d:%02d:%02d", remainderHour.remainder, remainderMinute.remainder, remainderSecond.remainder)
     }
+}
+
+extension SignedInteger {
+    
+    public var int: Int { Int(self) }
+    public var float: Float { Float(self) }
+    public var double: Double { Double(self) }
+    public var cgFloat: CGFloat { CGFloat(self) }
+}
+
+extension FloatingPoint {
+    
+    public var int: Int { Int(double) }
+    public var float: Float { Float(double) }
+    /// 向上取整
+    public var upInt: Int { Int(ceil(double)) }
+    public var cgFloat: CGFloat { CGFloat(double) }
+    public var double: Double { Double("\(self)") ?? 0.0 }
 }

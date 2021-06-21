@@ -115,21 +115,6 @@ extension File {
                 return 0
             }
         }
-//
-//        public func value(_ unit: Unit) -> UInt64 {
-//            let doubleValue: Double = value(unit)
-//            return UInt64(doubleValue)
-//        }
-//
-//        public func value(_ unit: Unit) -> Int {
-//            let doubleValue: Double = value(unit)
-//            return Int(doubleValue)
-//        }
-//
-//        public func value(_ unit: Unit) -> Float {
-//            let doubleValue: Double = value(unit)
-//            return Float(doubleValue)
-//        }
         
         public var unit: Hardware.Unit {
             return .init(filePath == nil ? bytes : getBytes())
