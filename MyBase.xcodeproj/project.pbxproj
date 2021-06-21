@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		182ACFA2267C499B0054B203 /* Weakly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182ACFA1267C499B0054B203 /* Weakly.swift */; };
+		182ACFC7267C57B50054B203 /* FreeVPN.log in Resources */ = {isa = PBXBuildFile; fileRef = 182ACFC6267C57B50054B203 /* FreeVPN.log */; };
+		182ACFCA267C581F0054B203 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182ACFC9267C581F0054B203 /* LogViewController.swift */; };
 		182D50332654A8920071AC89 /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D50322654A8920071AC89 /* Sugar.swift */; };
+		182E8EAA2680220B00530F0B /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E8EA92680220B00530F0B /* Hardware.swift */; };
+		182E8EAD2680222D00530F0B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E8EAC2680222D00530F0B /* Network.swift */; };
 		1838DFE726535E6D006D4AC0 /* MyBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1838DFE526535E6D006D4AC0 /* MyBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1838DFF526535E7F006D4AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838DFF426535E7F006D4AC0 /* AppDelegate.swift */; };
 		1838DFF926535E7F006D4AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838DFF826535E7F006D4AC0 /* ViewController.swift */; };
@@ -74,7 +78,11 @@
 
 /* Begin PBXFileReference section */
 		182ACFA1267C499B0054B203 /* Weakly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakly.swift; sourceTree = "<group>"; };
+		182ACFC6267C57B50054B203 /* FreeVPN.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FreeVPN.log; sourceTree = "<group>"; };
+		182ACFC9267C581F0054B203 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		182D50322654A8920071AC89 /* Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
+		182E8EA92680220B00530F0B /* Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
+		182E8EAC2680222D00530F0B /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1838DFE226535E6D006D4AC0 /* MyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1838DFE526535E6D006D4AC0 /* MyBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBase.h; sourceTree = "<group>"; };
 		1838DFE626535E6D006D4AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 				1838E03626536997006D4AC0 /* Dictionary.swift */,
 				1838E01626536534006D4AC0 /* File.swift */,
 				182D50322654A8920071AC89 /* Sugar.swift */,
+				182E8EA92680220B00530F0B /* Hardware.swift */,
+				182E8EAC2680222D00530F0B /* Network.swift */,
 				1838E01C26536729006D4AC0 /* Global.swift */,
 				1838E05926538DE3006D4AC0 /* Operator.swift */,
 				1838DFE626535E6D006D4AC0 /* Info.plist */,
@@ -203,7 +213,9 @@
 			children = (
 				1838DFF426535E7F006D4AC0 /* AppDelegate.swift */,
 				1838DFF826535E7F006D4AC0 /* ViewController.swift */,
+				182ACFC6267C57B50054B203 /* FreeVPN.log */,
 				1845E5E0267B457200463607 /* QRScanViewController.swift */,
+				182ACFC9267C581F0054B203 /* LogViewController.swift */,
 				1838DFFA26535E7F006D4AC0 /* Main.storyboard */,
 				1838DFFD26535E80006D4AC0 /* Assets.xcassets */,
 				1838DFFF26535E80006D4AC0 /* LaunchScreen.storyboard */,
@@ -337,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1838E00126535E80006D4AC0 /* LaunchScreen.storyboard in Resources */,
+				182ACFC7267C57B50054B203 /* FreeVPN.log in Resources */,
 				1838DFFE26535E80006D4AC0 /* Assets.xcassets in Resources */,
 				1838DFFC26535E7F006D4AC0 /* Main.storyboard in Resources */,
 			);
@@ -449,7 +462,9 @@
 				1838E04F26536A7B006D4AC0 /* UIColor.swift in Sources */,
 				1838E05226536A98006D4AC0 /* UIView.swift in Sources */,
 				1838E03726536997006D4AC0 /* Dictionary.swift in Sources */,
+				182E8EAA2680220B00530F0B /* Hardware.swift in Sources */,
 				1838E04926536A1E006D4AC0 /* UIImageView.swift in Sources */,
+				182E8EAD2680222D00530F0B /* Network.swift in Sources */,
 				1838E03D265369C5006D4AC0 /* Data.swift in Sources */,
 				1838E04C26536A67006D4AC0 /* Number.swift in Sources */,
 				1838E02B2653672A006D4AC0 /* Async.swift in Sources */,
@@ -468,6 +483,7 @@
 			files = (
 				1845E5E1267B457200463607 /* QRScanViewController.swift in Sources */,
 				1838DFF926535E7F006D4AC0 /* ViewController.swift in Sources */,
+				182ACFCA267C581F0054B203 /* LogViewController.swift in Sources */,
 				1838DFF526535E7F006D4AC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
