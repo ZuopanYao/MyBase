@@ -9,6 +9,7 @@ target 'Example' do
   # Pods for Example
 pod 'ElegantSnap'
 pod 'RxCocoa'
+pod 'Alamofire'
 end
 
 target 'MyBase' do
@@ -18,6 +19,7 @@ target 'MyBase' do
   # Pods for MyBase
 pod 'ElegantSnap'
 pod 'RxCocoa'
+pod 'Alamofire'
 end
 
 post_install do |installer|
