@@ -29,4 +29,18 @@ extension Decodable {
         } catch { puts(error) }
         return nil
     }
+    
+    /// decode to Codable's instance
+    static public func decode(_ from: String?) -> [Self]? {
+        return from?.components(separatedBy: "&&==&&").compactMap({ $0.data }).compactMap { Self.decode($0) }
+    }
+}
+
+extension Array where Element: Codable {
+    
+    /// Encode to string
+    var encode: String? {
+        let strings = compactMap { $0.encode?.string }
+        return strings.joined(separator: "&&==&&")
+    }
 }
