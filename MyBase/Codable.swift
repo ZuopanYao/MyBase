@@ -36,7 +36,7 @@ extension Decodable {
     }
 }
 
-extension Array where Element: Codable {
+public extension Array where Element: Codable {
     
     /// Encode to string
     var encode: String? {
