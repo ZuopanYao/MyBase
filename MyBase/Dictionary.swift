@@ -8,24 +8,28 @@
 import Foundation
 
 // MARK: - Extension Dictionary
-extension Dictionary {
+public extension Dictionary {
     
     /// 与另外一个字典合并
-    public func union(_ elements: [Key: Value]) -> [Key: Value] {
+    func union(_ elements: [Key: Value]) -> [Key: Value] {
         var base = self
         for (key, value) in elements {
             base[key] = value
         }
         return base
     }
+}
+
+public extension Dictionary.Keys {
     
-    /// 所有的 Key
-    public var allKeys: [Key] {
-        keys.map { $0 }
+    var items: [Element] {
+        map { $0 }
     }
+}
+
+public extension Dictionary.Values {
     
-    /// 所有的 Value
-    public var allValues: [Value] {
-        values.map { $0 }
+    var items: [Element] {
+        map { $0 }
     }
 }
