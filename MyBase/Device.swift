@@ -14,7 +14,7 @@ public struct Device {
     
     /// 设备型号 e.g. @"iPhone 12 Pro Max", "iPad mini"
     public static let model: String = {
-        guard UIDevice.current.userInterfaceIdiom == .pad else {
+        guard UIDevice.current.model == "iPad" else {
             return Phone(Hardware.platform).model
         }
         return Pad(Hardware.platform).model
