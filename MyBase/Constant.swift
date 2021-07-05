@@ -33,13 +33,23 @@ public extension Constant {
     static var statusBarHeight: CGFloat { App.shared.statusBarFrame.height }
     
     /// 导航栏高度
-    static var navigationBarHeight: CGFloat { isPad ? 50.0 : 44.0 }
+    static var navigationBarHeight: CGFloat {
+        guard isPhone else { return 50.0 }
+        guard App.shared.statusBarOrientation.isLandscape else {
+            return 44.0
+        }
+        return 32.0
+    }
     
     /// 标签栏高度
     /// iPad Pro 11.0 第一代(2018年)开始，标签栏高度为 65.0
     /// iPad Pro 12.9 第三代(2018年)开始，标签栏高度为 65.0
     static var tabBarHeight: CGFloat {
-        isPad ? 50.0 : (isNotchScreen ? 50.0 : 49.0)
+        guard isPhone else { return 50.0 }
+        guard App.shared.statusBarOrientation.isLandscape else {
+            return isNotchScreen ? 50.0 : 49.0
+        }
+        return 32.0
     }
     
     /// 底部安全区域高度
