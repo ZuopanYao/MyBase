@@ -108,25 +108,25 @@ public class App {
 }
 
 /// For URL
-extension App {
+public extension App {
     
-    public static func canOpen(_ url: URL) -> Bool {
+    static func canOpen(_ url: URL) -> Bool {
         return shared.canOpenURL(url)
     }
     
-    public static func open(_ url: URL, options: [UIApplication.OpenExternalURLOptionsKey: Any] = [:],
-                            completionHandler completion: ((Bool) -> Void)? = nil) {
+    static func open(_ url: URL, options: [UIApplication.OpenExternalURLOptionsKey: Any] = [:],
+                     completionHandler completion: ((Bool) -> Void)? = nil) {
          shared.open(url, options: options, completionHandler: completion)
     }
 }
 
-extension App {
+public extension App {
     
     /// true = 在模拟器上运行
-    public static let isRunOnSimulator: Bool = TARGET_IPHONE_SIMULATOR == 1
+    static let isRunOnSimulator: Bool = TARGET_IPHONE_SIMULATOR == 1
     
     /// true = 在 M1 芯片上运行
-    public static let isRunOnM1: Bool = {
+    static let isRunOnM1: Bool = {
         CMMotionManager().isAccelerometerAvailable == false && isRunOnSimulator == false
     }()
 }

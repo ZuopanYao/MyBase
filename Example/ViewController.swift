@@ -18,6 +18,10 @@ struct Model: Codable {
     init() { }
 }
 
+struct MyParam: Constant {
+    
+}
+
 class ViewController: UIViewController {
     
     let disposeBag: DisposeBag = .init()
@@ -63,10 +67,29 @@ class ViewController: UIViewController {
         
         print(24 - 4 + 3 / 3 <> 3)
         print(2 <<>> 3)
+        puts(UIScreen.main.currentMode?.size)
+        puts(UIScreen.main.currentMode?.pixelAspectRatio)
         
-        let sum: Int = [34, 44].avg()
+        puts(self.view.safeAreaInsets)
+
+       
+    }
     
-        
+    deinit {
+        Notify.remove(self)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        puts(self.view.safeAreaInsets)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        puts(MyParam.tabBarHeight)
+
+//        puts("状态栏 ", App.shared.statusBarFrame)
+//        puts("导航栏 ", navigationController?.navigationBar.bounds)
+//        puts("标签栏 ", tabBarController?.tabBar.bounds)
     }
     
     @objc func dodo(event: Any?){
