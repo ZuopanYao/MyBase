@@ -53,25 +53,7 @@ class ViewController: UIViewController {
         //
         //        let state = value == nil
         //
-        print(2*2 <> 3*2)
-        print(2*2 <<>> 3*2)
-        
-        print(4/2 <> 6/2)
-        print(4/2 <<>> 6/2)
-        
-        print(2 + 1 <> 3 + 1)
-        print(2 + 1 <<>> 3 + 1)
-        
-        print(4 - 1 <> 3 - 1)
-        print(2 - 1 <<>> 3 - 1)
-        
-        print(24 - 4 + 3 / 3 <> 3)
-        print(2 <<>> 3)
-        puts(UIScreen.main.currentMode?.size)
-        puts(UIScreen.main.currentMode?.pixelAspectRatio)
-        
-        puts(self.view.safeAreaInsets)
-
+    
        
     }
     
@@ -90,6 +72,7 @@ class ViewController: UIViewController {
 //        puts("状态栏 ", App.shared.statusBarFrame)
 //        puts("导航栏 ", navigationController?.navigationBar.bounds)
 //        puts("标签栏 ", tabBarController?.tabBar.bounds)
+
     }
     
     @objc func dodo(event: Any?){
@@ -103,15 +86,4 @@ class ViewController: UIViewController {
     func dodobtn(event: Event<UIButton>){
         puts("UIButton\(event.element!)")
     }
-}
-
-infix operator <>: AssignmentPrecedence
-infix operator <<>>: AssignmentPrecedence
-
-func <> <T: Numeric>(iPhone: T, iPad: T) -> T {
-    return iPhone * iPad
-}
-
-func <<>> <T: Numeric>(iPhone: T, iPad: T) -> T {
-    return iPhone + iPad
 }
