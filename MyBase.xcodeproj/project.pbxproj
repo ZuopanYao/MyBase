@@ -25,7 +25,6 @@
 		1838E0252653672A006D4AC0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E01C26536729006D4AC0 /* Constant.swift */; };
 		1838E0262653672A006D4AC0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E01D26536729006D4AC0 /* App.swift */; };
 		1838E0292653672A006D4AC0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0202653672A006D4AC0 /* Device.swift */; };
-		1838E02A2653672A006D4AC0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0212653672A006D4AC0 /* Queue.swift */; };
 		1838E02B2653672A006D4AC0 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0222653672A006D4AC0 /* Async.swift */; };
 		1838E02C2653672A006D4AC0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E0232653672A006D4AC0 /* Logger.swift */; };
 		1838E03126536917006D4AC0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1838E03026536917006D4AC0 /* String.swift */; };
@@ -96,7 +95,6 @@
 		1838E01C26536729006D4AC0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1838E01D26536729006D4AC0 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1838E0202653672A006D4AC0 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		1838E0212653672A006D4AC0 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		1838E0222653672A006D4AC0 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		1838E0232653672A006D4AC0 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		1838E03026536917006D4AC0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				1838E05926538DE3006D4AC0 /* Operator.swift */,
 				1845E5D9267B42B000463607 /* QR.swift */,
 				1845E5DD267B453900463607 /* QRScanner.swift */,
-				1838E0212653672A006D4AC0 /* Queue.swift */,
 				1838E03026536917006D4AC0 /* String.swift */,
 				182D50322654A8920071AC89 /* Sugar.swift */,
 				1838E05426536AB9006D4AC0 /* UIButton.swift */,
@@ -453,7 +450,6 @@
 				1845E5ED267B4F7500463607 /* QRScanner.swift in Sources */,
 				1848842826678B0B00021D53 /* Any.swift in Sources */,
 				1838E04626536A13006D4AC0 /* UIImage.swift in Sources */,
-				1838E02A2653672A006D4AC0 /* Queue.swift in Sources */,
 				1838E03A265369AD006D4AC0 /* URL.swift in Sources */,
 				1838E04F26536A7B006D4AC0 /* UIColor.swift in Sources */,
 				1838E05226536A98006D4AC0 /* UIView.swift in Sources */,

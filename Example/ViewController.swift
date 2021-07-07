@@ -11,6 +11,8 @@ import ElegantSnap
 import SnapKit
 import RxSwift
 import RxCocoa
+import Security
+import CommonCrypto
 
 struct Model: Codable {
     var name: String = ""
@@ -20,7 +22,11 @@ struct Model: Codable {
 
 struct MyParam: Constant {
     
+//    static var tabBarHeight: CGFloat {
+//        65.0
+//    }
 }
+
 
 class ViewController: UIViewController {
     
@@ -53,8 +59,8 @@ class ViewController: UIViewController {
         //
         //        let state = value == nil
         //
-    
-       
+                
+        puts("中国好啊".replace([("好", "真")]))
     }
     
     deinit {
@@ -68,6 +74,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         puts(MyParam.tabBarHeight)
+        puts(App.shared.keyWindow!.safeAreaInsets)
 
 //        puts("状态栏 ", App.shared.statusBarFrame)
 //        puts("导航栏 ", navigationController?.navigationBar.bounds)
