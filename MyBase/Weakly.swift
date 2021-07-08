@@ -7,16 +7,16 @@
 
 import Foundation
 
-class Weakly: NSObject {
+public class Weakly: NSObject {
 
     weak var object: NSObject?
     
-    init(_ object: NSObject) {
+    public init(_ object: NSObject) {
         self.object = object
     }
 }
 
-extension Array where Element == Weakly {
+public extension Array where Element == Weakly {
     
     func contains(_ object: NSObject) -> Bool {
         return (filter { $0.object == object }).count > 0

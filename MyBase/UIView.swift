@@ -139,16 +139,16 @@ extension UIView {
     }
 }
 
-private let actionSubject: PublishSubject<NSObject> = .init()
-private let disposeBag: DisposeBag = .init()
-private var registerStore: [Weakly] = []
+public let actionSubject: PublishSubject<NSObject> = .init()
+public let mbDisposeBag: DisposeBag = .init()
+public var registerStore: [Weakly] = []
 
 public protocol RxAction { }
 
 extension RxAction where Self: UIView {
     
     /// 语法糖 - 点击事件
-    public var click: ((RxSwift.Event<Self>) -> Void)? {
+   @inlinable public var click: ((RxSwift.Event<Self>) -> Void)? {
         get { nil }
         set {
             registerStore = registerStore.strongReference()
@@ -161,7 +161,7 @@ extension RxAction where Self: UIView {
                 (self as! UIButton).rx.tap
                     .map { self }
                     .subscribe(newValue!)
-                    .disposed(by: disposeBag)
+                    .disposed(by: mbDisposeBag)
                 return
             }
             
@@ -171,14 +171,14 @@ extension RxAction where Self: UIView {
             actionSubject
                 .filter { $0 == self }
                 .compactMap { $0 as? Self }
-                .subscribe(newValue!).disposed(by: disposeBag)
+                .subscribe(newValue!).disposed(by: mbDisposeBag)
         }
     }
 }
 
 extension UIView {
     
-    @objc fileprivate func tapWithCall(sender: UITapGestureRecognizer) {
+    @objc public func tapWithCall(sender: UITapGestureRecognizer) {
         actionSubject.onNext(self)
     }
 }
