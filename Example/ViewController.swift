@@ -35,32 +35,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+       
+        view.addSubview(UILabel.then {
+            $0.backgroundColor = .red
+            $0.text = "Btn1"
+            $0.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
+            $0.click = { _ in
+                UILabel.appearance().textColor = .red
+            }
+        })
         
-        //        if "hello" + "world" ~~ "^[a-z]+$" {
-        //            print("it's ok")
-        //        } else {
-        //            print("it's error")
-        //        }
-        //
-        
-        let value: Float? = nil
-        // (view.backgroundColor = .red) <-- isValue(value) --> (view.backgroundColor = .blue)
-        
-        print("it's error join") <-- isValue(value) == true --> print("it's OK join")
-        isValue(value) <-- print("it's error signle")
-        isValue(value) --> print("it's ok signle")
-        
-        if isValue(value) { print("it's error signle") }
-        
-        //        let name = myName(optional: value, defaultValue: 10.0)
-        //        let name1 = myName1(optional: value, defaultValue: { 10.0 })
-        //
-        //        value == nil ? false : true
-        //
-        //        let state = value == nil
-        //
+        view.addSubview(UILabel.then {
+            $0.backgroundColor = .red
+            $0.text = "Btn2"
+            $0.frame = CGRect(x: 10, y: 200, width: 200, height: 30)
+            $0.click = { [weak self] _ in
+                self?.view.addSubview(UILabel.then {
+                    $0.text = "testerasr"
+                    $0.frame = CGRect(x: 10, y: 250, width: 200, height: 30)
+                })
                 
-        puts("中国好啊".replace([("好", "真")]))
+            }
+        })
+            
     }
     
     deinit {
