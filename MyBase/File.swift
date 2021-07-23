@@ -19,7 +19,7 @@ public class File {
     /// reading and writing
     public init(_ filePath: String?) {
         path = filePath
-        if FileManager.default.fileExists(atPath: path!) == false {
+        if path!.fileIsExists == false {
             FileManager.default.createFile(atPath: path!, contents: nil, attributes: nil)
         }
     }

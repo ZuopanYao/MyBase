@@ -13,6 +13,7 @@ import RxSwift
 import RxCocoa
 import Security
 import CommonCrypto
+import SafariServices
 
 struct Model: Codable {
     var name: String = ""

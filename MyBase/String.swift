@@ -116,6 +116,17 @@ public extension String {
     /// 转为 File URL
     var fileURL: URL? { URL(fileURLWithPath: self) }
     
+    // file Exists
+    var fileIsExists: Bool {
+        FileManager.default.fileExists(atPath: self)
+    }
+    
+    /// folder Exists
+    var folderIsExists: Bool {
+        var isDirectory: ObjCBool = true
+        return FileManager.default.fileExists(atPath: self, isDirectory: &isDirectory)
+    }
+    
     /// 转为 URL
     var url: URL? { URL(string: self) }
     
