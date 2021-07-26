@@ -45,6 +45,7 @@
 		1845E5E1267B457200463607 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845E5E0267B457200463607 /* QRScanViewController.swift */; };
 		1845E5ED267B4F7500463607 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845E5DD267B453900463607 /* QRScanner.swift */; };
 		1848842826678B0B00021D53 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848842726678B0B00021D53 /* Any.swift */; };
+		1867322F26AE8D3F004CD438 /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867322E26AE8D3F004CD438 /* FilePath.swift */; };
 		7694FEB15D7DDBCFF136976D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDB680DB939A307352F5B2A /* Pods_Example.framework */; };
 		B9BDB2E0265945F7003310B7 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BDB2DF265945F7003310B7 /* Codable.swift */; };
 		BA5F3C3487577F5B7376F9E6 /* Pods_MyBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CBDDC8A7076A64B11635C1 /* Pods_MyBase.framework */; };
@@ -115,6 +116,7 @@
 		1845E5DD267B453900463607 /* QRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
 		1845E5E0267B457200463607 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		1848842726678B0B00021D53 /* Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Any.swift; sourceTree = "<group>"; };
+		1867322E26AE8D3F004CD438 /* FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
 		29FCCCCA229F6C0ECD6DD8EB /* Pods-MyBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBase.release.xcconfig"; path = "Target Support Files/Pods-MyBase/Pods-MyBase.release.xcconfig"; sourceTree = "<group>"; };
 		2C2AB71D9601016A781EF156 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		50CBDDC8A7076A64B11635C1 /* Pods_MyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 				1838E0202653672A006D4AC0 /* Device.swift */,
 				1838E03626536997006D4AC0 /* Dictionary.swift */,
 				1838E01626536534006D4AC0 /* File.swift */,
+				1867322E26AE8D3F004CD438 /* FilePath.swift */,
 				182E8EA92680220B00530F0B /* Hardware.swift */,
 				1838DFE626535E6D006D4AC0 /* Info.plist */,
 				1838E0232653672A006D4AC0 /* Logger.swift */,
@@ -463,6 +466,7 @@
 				1838E02C2653672A006D4AC0 /* Logger.swift in Sources */,
 				1838E0292653672A006D4AC0 /* Device.swift in Sources */,
 				1838E0262653672A006D4AC0 /* App.swift in Sources */,
+				1867322F26AE8D3F004CD438 /* FilePath.swift in Sources */,
 				1838E05526536AB9006D4AC0 /* UIButton.swift in Sources */,
 				1838E01726536534006D4AC0 /* File.swift in Sources */,
 				1838E0252653672A006D4AC0 /* Constant.swift in Sources */,

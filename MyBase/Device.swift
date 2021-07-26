@@ -51,7 +51,7 @@ public struct Device {
                 "/private/var/stash"
             ]
             
-            if paths.filter({ $0.fileIsExists }).count > 0 {
+            if paths.filter({ $0.filePath().isExists }).count > 0 {
                 return true
             }
             
