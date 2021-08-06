@@ -68,14 +68,17 @@ class ViewController: UIViewController {
 //            print(info.releaseNotes)
 //        }
         
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss-07:00"
         
-        AppStore().customerReviews(appID: "444934666", country: "/cn") { (review, comments) in
+        AppStore().customerReviews(appID: "444934666", country: "") { (review, comments) in
             puts("comments.count = \(comments.count)")
             comments.filter {
                 $0.rating.value.int > 4
             }
                 .forEach { comment in
-                puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
+                    puts(comment.updated.value, df.date(from: comment.updated.value)?.format(.long) ?? "nil")
+                    puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
             }
         }
     }
