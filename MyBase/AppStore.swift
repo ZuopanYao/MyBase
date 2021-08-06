@@ -167,13 +167,13 @@ public extension AppStore {
 
     struct Feed: Codable {
 
-        public var id: Id
-        public var icon: Icon
+        public var id: Value
+        public var icon: Value
         public var link: [Link]
-        public var title: Title
+        public var title: Value
+        public var rights: Value
         public var author: Author
-        public var rights: Rights
-        public var updated: Updated
+        public var updated: Value
         public var comments: [Comment]
 
         enum CodingKeys: String, CodingKey {
@@ -191,16 +191,16 @@ public extension AppStore {
     /// 评论内容
     struct Comment: Codable {
 
-        public var id: Id
-        public var title: Title
+        public var id: Value
+        public var link: Link
+        public var title: Value
+        public var rating: Value
         public var author: Author
-        public var rating: Rating
-        public var link: EntryLink
-        public var updated: Updated
+        public var updated: Value
+        public var voteSum: Value
+        public var version: Value
         public var content: Content
-        public var voteSum: VoteSum
-        public var version: Version
-        public var voteCount: VoteCount
+        public var voteCount: Value
         public var contentType: ContentType
 
         enum CodingKeys: String, CodingKey {
@@ -218,7 +218,7 @@ public extension AppStore {
         }
     }
 
-    struct Attributes: Codable {
+    struct LinkAttributes: Codable {
 
         public var rel: String
         public var href: String
@@ -233,8 +233,8 @@ public extension AppStore {
 
     struct Author: Codable {
 
-        public var uri: Uri
-        public var name: Name
+        public var uri: Value
+        public var name: Value
         public var value: String?
 
         enum CodingKeys: String, CodingKey {
@@ -266,24 +266,6 @@ public extension AppStore {
         }
     }
 
-    struct LinkAttributes: Codable {
-
-        public var rel: String
-        public var href: String
-
-        enum CodingKeys: String, CodingKey {
-            case rel = "rel"
-            case href = "href"
-        }
-    }
-
-    struct EntryLink: Codable {
-        public var attributes: LinkAttributes
-        enum CodingKeys: String, CodingKey {
-            case attributes = "attributes"
-        }
-    }
-
     struct ContentAttributes: Codable {
         public var type: String
         enum CodingKeys: String, CodingKey {
@@ -299,83 +281,13 @@ public extension AppStore {
     }
 
     struct Link: Codable {
-        public var attributes: Attributes
+        public var attributes: LinkAttributes
         enum CodingKeys: String, CodingKey {
             case attributes = "attributes"
         }
     }
 
-    struct Name: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Rating: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Title: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Updated: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Uri: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct VoteCount: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Id: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct VoteSum: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Version: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Rights: Codable {
-        public var value: String
-        enum CodingKeys: String, CodingKey {
-            case value = "label"
-        }
-    }
-
-    struct Icon: Codable {
+    struct Value: Codable {
         public var value: String
         enum CodingKeys: String, CodingKey {
             case value = "label"
