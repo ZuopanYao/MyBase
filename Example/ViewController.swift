@@ -32,11 +32,13 @@ struct MyParam: Constant {
 class ViewController: UIViewController {
     
     let disposeBag: DisposeBag = .init()
+    static weak var weakSelf: ViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-       
+        Self.weakSelf = self
+        
         view.addSubview(UILabel.then {
             $0.backgroundColor = .red
             $0.text = "Btn1"
@@ -50,15 +52,29 @@ class ViewController: UIViewController {
             $0.backgroundColor = .red
             $0.text = "Btn2"
             $0.frame = CGRect(x: 10, y: 200, width: 200, height: 30)
+            
             $0.click = { [weak self] _ in
                 self?.view.addSubview(UILabel.then {
                     $0.text = "testerasr"
                     $0.frame = CGRect(x: 10, y: 250, width: 200, height: 30)
                 })
-                
             }
         })
-            
+        
+//        AppStore().lookup(appID: "444934666") { info in
+//            guard let info = info else { return }
+//            print(info.version)
+//            print(info.currentVersionReleaseDate)
+//            print(info.releaseNotes)
+//        }
+        
+        
+        AppStore().customerReviews(appID: "444934666", country: "/cn") { (review, comments) in
+            puts("comments.count = \(comments.count)")
+            comments.forEach { comment in
+                puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
+            }
+        }
     }
     
     deinit {

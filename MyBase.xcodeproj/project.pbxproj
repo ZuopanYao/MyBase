@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182553CC26BB883B009BA0FA /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182553CB26BB883B009BA0FA /* AppStore.swift */; };
 		182ACFA2267C499B0054B203 /* Weakly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182ACFA1267C499B0054B203 /* Weakly.swift */; };
 		182ACFC7267C57B50054B203 /* FreeVPN.log in Resources */ = {isa = PBXBuildFile; fileRef = 182ACFC6267C57B50054B203 /* FreeVPN.log */; };
 		182ACFCA267C581F0054B203 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182ACFC9267C581F0054B203 /* LogViewController.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		182553CB26BB883B009BA0FA /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		182ACFA1267C499B0054B203 /* Weakly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakly.swift; sourceTree = "<group>"; };
 		182ACFC6267C57B50054B203 /* FreeVPN.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FreeVPN.log; sourceTree = "<group>"; };
 		182ACFC9267C581F0054B203 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				1867322E26AE8D3F004CD438 /* FilePath.swift */,
 				182E8EA92680220B00530F0B /* Hardware.swift */,
 				1838DFE626535E6D006D4AC0 /* Info.plist */,
+				182553CB26BB883B009BA0FA /* AppStore.swift */,
 				1838E0232653672A006D4AC0 /* Logger.swift */,
 				1838DFE526535E6D006D4AC0 /* MyBase.h */,
 				182E8EAC2680222D00530F0B /* Network.swift */,
@@ -452,6 +455,7 @@
 				1838E05A26538DE3006D4AC0 /* Operator.swift in Sources */,
 				1845E5ED267B4F7500463607 /* QRScanner.swift in Sources */,
 				1848842826678B0B00021D53 /* Any.swift in Sources */,
+				182553CC26BB883B009BA0FA /* AppStore.swift in Sources */,
 				1838E04626536A13006D4AC0 /* UIImage.swift in Sources */,
 				1838E03A265369AD006D4AC0 /* URL.swift in Sources */,
 				1838E04F26536A7B006D4AC0 /* UIColor.swift in Sources */,
