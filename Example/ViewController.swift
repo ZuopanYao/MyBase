@@ -71,7 +71,10 @@ class ViewController: UIViewController {
         
         AppStore().customerReviews(appID: "444934666", country: "/cn") { (review, comments) in
             puts("comments.count = \(comments.count)")
-            comments.forEach { comment in
+            comments.filter {
+                $0.rating.value.int > 4
+            }
+                .forEach { comment in
                 puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
             }
         }

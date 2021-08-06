@@ -15,6 +15,10 @@ public class AppStore {
     public init() { }
     
     /// 获取应用在 AppStore 上的最新信息
+    ///
+    /// - Parameters:
+    ///   - appID: app 在应用商店上的 ID
+    ///   - completionHandler: 结果回调
     public func lookup(appID: String, completionHandler: @escaping (Result?) -> Void) {
         let url = URL(string: "https://itunes.apple.com/lookup?id=" + appID)!
         URLSession.shared.dataTask(with: url) { data, _, _ in
@@ -136,7 +140,7 @@ public class AppStore {
 
 public extension AppStore {
     
-    /// 获取 App 在 AppStore 上的评论
+    /// 获取 App 在 AppStore 上的最近50条评论
     ///
     /// - Parameters:
     ///   - appID: app 在应用商店上的 ID
