@@ -9,6 +9,7 @@
 //
 
 import Foundation
+import StoreKit
 
 public class AppStore {
     
@@ -297,5 +298,41 @@ public extension AppStore {
         enum CodingKeys: String, CodingKey {
             case value = "label"
         }
+    }
+}
+
+public extension AppStore {
+    
+    /// 去 App 评论页
+    static func showUserReviews(_ appID: String) {
+        App.open("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=\(appID)".url!)
+    }
+    
+    /// 去撰写评论
+    static func showWriteReview(_ appID: String) {
+        App.open("itms-apps://itunes.apple.com/app/id\(appID)?action=write-review".url!)
+    }
+    
+    /// 去 App 详情/更新页
+    static func show(_ appID: String) {
+        App.open("itms-apps://itunes.apple.com/app/id\(appID)".url!)
+    }
+}
+
+public extension AppStore {
+    
+    /// 显示 App 评分 View
+    static func showRatingView() {
+        guard #available(iOS 10.3, *) else { return }
+        SKStoreReviewController.requestReview()
+    }
+    
+    /// 在当前控制器打开 App 详情/更新页
+    static func show(_ appID: String, from viewController: UIViewController) {
+        let productViewController = SKStoreProductViewController()
+        productViewController.loadProduct(withParameters: [SKStoreProductParameterITunesItemIdentifier: appID]) { _, error in
+            puts(error ?? "Not error")
+        }
+        viewController.present(productViewController, animated: true, completion: nil)
     }
 }
