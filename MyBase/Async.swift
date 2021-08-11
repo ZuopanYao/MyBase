@@ -23,10 +23,14 @@ public func async(on workQueue: DispatchQueue = .main, delay: TimeInterval = 0.0
 /// - Parameters:
 ///   - workQueue: 在哪个线程上执行
 ///   - delay: 延迟执行，单位秒，默认 0.0
-///   - asyncExecute: 做些事情
-public func queue(_ workQueue: DispatchQueue, delay: TimeInterval = 0.0, asyncExecute: @escaping (() -> Void)) {
-    guard delay > 0.0 else { return workQueue.async(execute: asyncExecute) }
-    workQueue.asyncAfter(wallDeadline: .now() + delay, execute: asyncExecute)
+///   - execute: 做些事情
+public func queue(_ workQueue: DispatchQueue, delay: TimeInterval = 0.0, execute: @escaping (() -> Void)) {
+    guard delay > 0.0 else { return workQueue.async(execute: execute) }
+    workQueue.asyncAfter(wallDeadline: .now() + delay, execute: execute)
+}
+
+@inlinable public func uiThread(delay: TimeInterval = 0.0, execute: @escaping (() -> Void)) {
+    queue(.main, delay: delay, execute: execute)
 }
 
 public extension DispatchQueue {
