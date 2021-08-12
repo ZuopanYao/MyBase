@@ -31,7 +31,7 @@ public class AppStore {
                 completionHandler(lookup, lookup.results.first)
             } catch {
                 completionHandler(nil, nil)
-                print(error)
+                puts(error)
             }
         }.resume()
     }
@@ -162,7 +162,7 @@ public extension AppStore {
                 completionHandler(review, review.result.comments)
             } catch {
                 completionHandler(nil, [])
-                print(error)
+                puts(error)
             }
         }.resume()
     }
