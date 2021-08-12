@@ -70,6 +70,7 @@ class ViewController: UIViewController {
                 AppStore.show("444934666", from: self)
             }
         })
+        NotificationCenter.default.addObserver(forName: <#T##NSNotification.Name?#>, object: <#T##Any?#>, queue: <#T##OperationQueue?#>, using: <#T##(Notification) -> Void#>)
         
         
 //        AppStore().lookup(appID: "444934666") { info in

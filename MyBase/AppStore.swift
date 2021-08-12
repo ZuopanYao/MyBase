@@ -20,7 +20,8 @@ public class AppStore {
     /// - Parameters:
     ///   - appID: app 在应用商店上的 ID
     ///   - completionHandler: 结果回调
-    public func lookup(appID: String, completionHandler: @escaping (Result?) -> Void) {
+    ///   - result: app 信息
+    public func lookup(appID: String, completionHandler: @escaping (_ result: Result?) -> Void) {
         let url = URL(string: "https://itunes.apple.com/lookup?id=" + appID)!
         URLSession.shared.dataTask(with: url) { data, _, _ in
             guard let data = data else { return completionHandler(nil) }
@@ -148,7 +149,9 @@ public extension AppStore {
     ///   - country: 指定国家(地区)用户的评论，默认不指定；国家(地区)代码小写，如中国，应传"/cn"；国家(地区)代码请参照
     ///   [App Store 国家(地区)代码](https://help.apple.com/app-store-connect/#/dev997f9cf7c)
     ///   - completionHandler: 结果回调
-    func customerReviews(appID: String, country: String = "", completionHandler: @escaping (Review?, [Comment]) -> Void) {
+    ///   - review: 获取评论结果
+    ///   - comments: 每条评论内容
+    func customerReviews(appID: String, country: String = "", completionHandler: @escaping (_ review: Review?, _ comments: [Comment]) -> Void) {
         let url = URL(string: "https://itunes.apple.com\(country)/rss/customerreviews/id=\(appID)/json")!
         URLSession.shared.dataTask(with: url) { data, _, _ in
             guard let data = data else { return completionHandler(nil, []) }
