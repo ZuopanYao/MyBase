@@ -41,25 +41,36 @@ class ViewController: UIViewController {
         
         view.addSubview(UILabel.then {
             $0.backgroundColor = .red
-            $0.text = "Btn1"
+            $0.text = "Reviews"
             $0.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
             $0.click = { _ in
-                UILabel.appearance().textColor = .red
+                
+                /// 用户评论页
+                AppStore.showUserReviews("444934666")
             }
         })
         
         view.addSubview(UILabel.then {
             $0.backgroundColor = .red
-            $0.text = "Btn2"
+            $0.text = "Write Review"
             $0.frame = CGRect(x: 10, y: 200, width: 200, height: 30)
             
-            $0.click = { [weak self] _ in
-                self?.view.addSubview(UILabel.then {
-                    $0.text = "testerasr"
-                    $0.frame = CGRect(x: 10, y: 250, width: 200, height: 30)
-                })
+            $0.click = { _ in
+                /// 评论编辑页
+                AppStore.showWriteReview("444934666")
             }
         })
+        
+        view.addSubview(UILabel.then {
+            $0.backgroundColor = .red
+            $0.text = "Update"
+            $0.frame = CGRect(x: 10, y: 250, width: 200, height: 30)
+            
+            $0.click = { _ in
+                AppStore.show("444934666", from: self)
+            }
+        })
+        
         
 //        AppStore().lookup(appID: "444934666") { info in
 //            guard let info = info else { return }
@@ -67,6 +78,14 @@ class ViewController: UIViewController {
 //            print(info.currentVersionReleaseDate)
 //            print(info.releaseNotes)
 //        }
+        
+        
+        queue(.main) {
+            
+        }
+        queue(.global, delay: 1.0) {
+            
+        }
         
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss-07:00"
