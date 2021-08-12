@@ -73,8 +73,8 @@ public class AppStore {
         public var userRatingCount: Int
         public var fileSizeBytes: String
         public var artistViewURL: String
-        public var artworkUrl100: String
-        public var artworkUrl512: String
+        public var artworkURL100: String
+        public var artworkURL512: String
         public var formattedPrice: String
         public var minimumOsVersion: String
         public var screenshotURLs: [String]
@@ -116,8 +116,8 @@ public class AppStore {
             case releaseNotes = "releaseNotes"
             case fileSizeBytes = "fileSizeBytes"
             case artistViewURL = "artistViewUrl"
-            case artworkUrl100 = "artworkUrl100"
-            case artworkUrl512 = "artworkUrl512"
+            case artworkURL100 = "artworkUrl100"
+            case artworkURL512 = "artworkUrl512"
             case screenshotURLs = "screenshotUrls"
             case formattedPrice = "formattedPrice"
             case primaryGenreID = "primaryGenreId"
