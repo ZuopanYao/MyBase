@@ -95,6 +95,7 @@ class ViewController: UIViewController {
             print(info.releaseNotes)
         }
         
+        let second = Date.Unit.day(7).second
         
 //        let df = DateFormatter()
 //        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss-07:00"

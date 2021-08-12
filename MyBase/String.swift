@@ -141,7 +141,7 @@ public extension String {
     ///   - salt: 加盐
     ///   - format: "X" 返回大写，"x" 返回小写，默认 "X"
     /// - Returns: String
-    func md5WithSalt(_ salt: String, format: String = "X") -> String {
+    func md5(_ salt: String, format: String = "X") -> String {
         return (salt + self).md5(format)
     }
     
