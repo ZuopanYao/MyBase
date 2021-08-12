@@ -16,7 +16,7 @@ public class QRScanner: NSObject {
     
     /// 识别到二维码
     public var recognizedQR: ((String) -> Void)!
-    public var metadataObjectTypes: [AVMetadataObject.ObjectType] = [
+    public static var metadataObjectTypes: [AVMetadataObject.ObjectType] = [
         .qr,        /// 二维码
         .ean13,     /// 条形码
         .ean8,      /// 条形码
@@ -68,7 +68,7 @@ public class QRScanner: NSObject {
         captureSession.addInput(deviceInput)
         
         /// 设置数据输出类型
-        metadataOutput.metadataObjectTypes = metadataObjectTypes
+        metadataOutput.metadataObjectTypes = Self.metadataObjectTypes
         
         videoPreviewLayer.session = captureSession
         videoPreviewLayer.videoGravity = .resizeAspectFill
