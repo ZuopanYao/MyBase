@@ -71,6 +71,19 @@ class ViewController: UIViewController {
             }
         })
 
+        costTime {
+            let index: String = "10"
+            if index == "1" {
+                puts("it's ok")
+            }
+        }
+        
+        costTime {
+            let index: Int = 10
+            if index == 1 {
+                puts("it's ok")
+            }
+        }
         
         AppStore().lookup(appID: "444934666") { _, info in
         
@@ -83,26 +96,19 @@ class ViewController: UIViewController {
         }
         
         
-        queue(.main) {
-            
-        }
-        queue(.global, delay: 1.0) {
-            
-        }
-        
-        let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss-07:00"
-        
-        AppStore().customerReviews(appID: "444934666", country: "") { (review, comments) in
-            puts("comments.count = \(comments.count)")
-            comments.filter {
-                $0.rating.value.int > 4
-            }
-                .forEach { comment in
-                    puts(comment.updated.value, df.date(from: comment.updated.value)?.format(.long) ?? "nil")
-                    puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
-            }
-        }
+//        let df = DateFormatter()
+//        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss-07:00"
+//
+//        AppStore().customerReviews(appID: "444934666", country: "") { (review, comments) in
+//            puts("comments.count = \(comments.count)")
+//            comments.filter {
+//                $0.rating.value.int > 4
+//            }
+//                .forEach { comment in
+//                    puts(comment.updated.value, df.date(from: comment.updated.value)?.format(.long) ?? "nil")
+//                    puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
+//            }
+//        }
     }
     
     deinit {
