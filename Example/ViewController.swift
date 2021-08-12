@@ -70,15 +70,17 @@ class ViewController: UIViewController {
                 AppStore.show("444934666", from: self)
             }
         })
-        NotificationCenter.default.addObserver(forName: <#T##NSNotification.Name?#>, object: <#T##Any?#>, queue: <#T##OperationQueue?#>, using: <#T##(Notification) -> Void#>)
+
         
+        AppStore().lookup(appID: "444934666") { _, info in
         
-//        AppStore().lookup(appID: "444934666") { info in
-//            guard let info = info else { return }
-//            print(info.version)
-//            print(info.currentVersionReleaseDate)
-//            print(info.releaseNotes)
-//        }
+            guard let info = info else { return }
+//            guard result.count > 0 else { return puts("app 已下架或不存在") }
+//            let info = result.results.first!
+            print(info.version)
+            print(info.currentVersionReleaseDate)
+            print(info.releaseNotes)
+        }
         
         
         queue(.main) {

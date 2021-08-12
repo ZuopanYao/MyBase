@@ -20,16 +20,17 @@ public class AppStore {
     /// - Parameters:
     ///   - appID: app 在应用商店上的 ID
     ///   - completionHandler: 结果回调
-    ///   - result: app 信息
-    public func lookup(appID: String, completionHandler: @escaping (_ result: Result?) -> Void) {
+    ///   - result: 查询结果
+    ///   - info: App 信息
+    public func lookup(appID: String, completionHandler: @escaping (_ result: Result?, _ info: AppInfo?) -> Void) {
         let url = URL(string: "https://itunes.apple.com/lookup?id=" + appID)!
         URLSession.shared.dataTask(with: url) { data, _, _ in
-            guard let data = data else { return completionHandler(nil) }
+            guard let data = data else { return completionHandler(nil, nil) }
             do {
                 let lookup = try JSONDecoder().decode(Result.self, from: data)
-                completionHandler(lookup)
+                completionHandler(lookup, lookup.results.first)
             } catch {
-                completionHandler(nil)
+                completionHandler(nil, nil)
                 print(error)
             }
         }.resume()
@@ -37,8 +38,8 @@ public class AppStore {
     
     public struct Result: Codable {
         
-        var count: Int
-        var results: [AppInfo]
+        public var count: Int
+        public var results: [AppInfo]
         
         enum CodingKeys: String, CodingKey {
             case count = "resultCount"
@@ -151,7 +152,8 @@ public extension AppStore {
     ///   - completionHandler: 结果回调
     ///   - review: 获取评论结果
     ///   - comments: 每条评论内容
-    func customerReviews(appID: String, country: String = "", completionHandler: @escaping (_ review: Review?, _ comments: [Comment]) -> Void) {
+    func customerReviews(appID: String, country: String = "",
+                         completionHandler: @escaping (_ review: Review?, _ comments: [Comment]) -> Void) {
         let url = URL(string: "https://itunes.apple.com\(country)/rss/customerreviews/id=\(appID)/json")!
         URLSession.shared.dataTask(with: url) { data, _, _ in
             guard let data = data else { return completionHandler(nil, []) }
