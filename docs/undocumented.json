@@ -1,0 +1,1713 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 20,
+      "symbol": "App.Version",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 51,
+      "symbol": "App.Path",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 52,
+      "symbol": "App.Path.home",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 53,
+      "symbol": "App.Path.temporary",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 54,
+      "symbol": "App.Path.document",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 55,
+      "symbol": "App.Path.library",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 56,
+      "symbol": "App.Path.cache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 63,
+      "symbol": "App.Bundle",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 64,
+      "symbol": "App.Bundle.resource",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 65,
+      "symbol": "App.Bundle.executable",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 66,
+      "symbol": "App.Bundle.builtInPlug",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 67,
+      "symbol": "App.Bundle.framework",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 68,
+      "symbol": "App.Bundle.sharedSupport",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 69,
+      "symbol": "App.Bundle.sharedFramework",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 73,
+      "symbol": "App.Bundle.path(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 77,
+      "symbol": "App.Bundle.url(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 82,
+      "symbol": "App.sign",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 101,
+      "symbol": "App.Sign",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 104,
+      "symbol": "App.Sign.appStore",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 105,
+      "symbol": "App.Sign.development",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 106,
+      "symbol": "App.Sign.distribution",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 113,
+      "symbol": "App.canOpen(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/App.swift",
+      "line": 117,
+      "symbol": "App.open(_:options:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 14,
+      "symbol": "AppStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 16,
+      "symbol": "AppStore.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 39,
+      "symbol": "AppStore.Result",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 41,
+      "symbol": "AppStore.Result.count",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 42,
+      "symbol": "AppStore.Result.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 50,
+      "symbol": "AppStore.AppInfo",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 52,
+      "symbol": "AppStore.AppInfo.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 53,
+      "symbol": "AppStore.AppInfo.kind",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 54,
+      "symbol": "AppStore.AppInfo.trackID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 55,
+      "symbol": "AppStore.AppInfo.artistID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 56,
+      "symbol": "AppStore.AppInfo.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 57,
+      "symbol": "AppStore.AppInfo.genres",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 58,
+      "symbol": "AppStore.AppInfo.bundleID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 59,
+      "symbol": "AppStore.AppInfo.currency",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 60,
+      "symbol": "AppStore.AppInfo.trackName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 61,
+      "symbol": "AppStore.AppInfo.sellerName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 62,
+      "symbol": "AppStore.AppInfo.features",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 63,
+      "symbol": "AppStore.AppInfo.artistName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 64,
+      "symbol": "AppStore.AppInfo.genreIDs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 65,
+      "symbol": "AppStore.AppInfo.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 66,
+      "symbol": "AppStore.AppInfo.wrapperType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 67,
+      "symbol": "AppStore.AppInfo.primaryGenreID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 68,
+      "symbol": "AppStore.AppInfo.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 69,
+      "symbol": "AppStore.AppInfo.trackViewURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 70,
+      "symbol": "AppStore.AppInfo.artworkURL60",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 71,
+      "symbol": "AppStore.AppInfo.advisories",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 72,
+      "symbol": "AppStore.AppInfo.releaseNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 73,
+      "symbol": "AppStore.AppInfo.userRatingCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 74,
+      "symbol": "AppStore.AppInfo.fileSizeBytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 75,
+      "symbol": "AppStore.AppInfo.artistViewURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 76,
+      "symbol": "AppStore.AppInfo.artworkURL100",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 77,
+      "symbol": "AppStore.AppInfo.artworkURL512",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 78,
+      "symbol": "AppStore.AppInfo.formattedPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 79,
+      "symbol": "AppStore.AppInfo.minimumOsVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 80,
+      "symbol": "AppStore.AppInfo.screenshotURLs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 81,
+      "symbol": "AppStore.AppInfo.primaryGenreName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 82,
+      "symbol": "AppStore.AppInfo.averageUserRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 83,
+      "symbol": "AppStore.AppInfo.trackCensoredName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 84,
+      "symbol": "AppStore.AppInfo.isGameCenterEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 85,
+      "symbol": "AppStore.AppInfo.supportedDevices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 86,
+      "symbol": "AppStore.AppInfo.trackContentRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 87,
+      "symbol": "AppStore.AppInfo.ipadScreenshotURLs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 88,
+      "symbol": "AppStore.AppInfo.languageCodesISO2A",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 89,
+      "symbol": "AppStore.AppInfo.contentAdvisoryRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 90,
+      "symbol": "AppStore.AppInfo.appletvScreenshotURLs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 91,
+      "symbol": "AppStore.AppInfo.currentVersionReleaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 92,
+      "symbol": "AppStore.AppInfo.userRatingCountForCurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 93,
+      "symbol": "AppStore.AppInfo.isVppDeviceBasedLicensingEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 94,
+      "symbol": "AppStore.AppInfo.averageUserRatingForCurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 144,
+      "symbol": "AppStore",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 173,
+      "symbol": "AppStore.Review.result",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 179,
+      "symbol": "AppStore.Feed",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 181,
+      "symbol": "AppStore.Feed.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 182,
+      "symbol": "AppStore.Feed.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 183,
+      "symbol": "AppStore.Feed.link",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 184,
+      "symbol": "AppStore.Feed.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 185,
+      "symbol": "AppStore.Feed.rights",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 186,
+      "symbol": "AppStore.Feed.author",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 187,
+      "symbol": "AppStore.Feed.updated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 188,
+      "symbol": "AppStore.Feed.comments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 205,
+      "symbol": "AppStore.Comment.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 206,
+      "symbol": "AppStore.Comment.link",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 207,
+      "symbol": "AppStore.Comment.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 208,
+      "symbol": "AppStore.Comment.rating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 209,
+      "symbol": "AppStore.Comment.author",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 210,
+      "symbol": "AppStore.Comment.updated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 211,
+      "symbol": "AppStore.Comment.voteSum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 212,
+      "symbol": "AppStore.Comment.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 213,
+      "symbol": "AppStore.Comment.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 214,
+      "symbol": "AppStore.Comment.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 215,
+      "symbol": "AppStore.Comment.contentType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 232,
+      "symbol": "AppStore.LinkAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 234,
+      "symbol": "AppStore.LinkAttributes.rel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 235,
+      "symbol": "AppStore.LinkAttributes.href",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 236,
+      "symbol": "AppStore.LinkAttributes.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 245,
+      "symbol": "AppStore.Author",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 247,
+      "symbol": "AppStore.Author.uri",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 248,
+      "symbol": "AppStore.Author.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 249,
+      "symbol": "AppStore.Author.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 258,
+      "symbol": "AppStore.Content",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 260,
+      "symbol": "AppStore.Content.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 261,
+      "symbol": "AppStore.Content.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 269,
+      "symbol": "AppStore.ContentTypeAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 271,
+      "symbol": "AppStore.ContentTypeAttributes.term",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 272,
+      "symbol": "AppStore.ContentTypeAttributes.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 280,
+      "symbol": "AppStore.ContentAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 281,
+      "symbol": "AppStore.ContentAttributes.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 287,
+      "symbol": "AppStore.ContentType",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 288,
+      "symbol": "AppStore.ContentType.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 294,
+      "symbol": "AppStore.Link",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 295,
+      "symbol": "AppStore.Link.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 301,
+      "symbol": "AppStore.Value",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 302,
+      "symbol": "AppStore.Value.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 309,
+      "symbol": "AppStore",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/AppStore.swift",
+      "line": 327,
+      "symbol": "AppStore",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Async.swift",
+      "line": 32,
+      "symbol": "uiThread(delay:execute:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Async.swift",
+      "line": 37,
+      "symbol": "DispatchQueue.global",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Data.swift",
+      "line": 13,
+      "symbol": "Data.bytes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 15,
+      "symbol": "Date.Format",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 18,
+      "symbol": "Date.Format.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 53,
+      "symbol": "Date.Unit",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 54,
+      "symbol": "Date.Unit.minute(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 55,
+      "symbol": "Date.Unit.hour(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 56,
+      "symbol": "Date.Unit.day(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Date.swift",
+      "line": 69,
+      "symbol": "today",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Device.swift",
+      "line": 10,
+      "symbol": "Device",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Device.swift",
+      "line": 26,
+      "symbol": "Device.OS",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Dictionary.swift",
+      "line": 23,
+      "symbol": "Dictionary.+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Dictionary.swift",
+      "line": 34,
+      "symbol": "Dictionary.Keys.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Dictionary.swift",
+      "line": 39,
+      "symbol": "Dictionary.Values.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 10,
+      "symbol": "File",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 29,
+      "symbol": "File.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 41,
+      "symbol": "File.attributedString(options:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 46,
+      "symbol": "File.dictionary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 96,
+      "symbol": "File",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 98,
+      "symbol": "File.Size",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 103,
+      "symbol": "File.Size.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 121,
+      "symbol": "File.Size.unit",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 126,
+      "symbol": "File.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/File.swift",
+      "line": 129,
+      "symbol": "File.Size",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/FilePath.swift",
+      "line": 10,
+      "symbol": "FilePath",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/FilePath.swift",
+      "line": 16,
+      "symbol": "FilePath.init(_:isDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 11,
+      "symbol": "Hardware",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 16,
+      "symbol": "Hardware.Unit.radix",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 23,
+      "symbol": "Hardware.Unit.byte",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 33,
+      "symbol": "Hardware",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 38,
+      "symbol": "Hardware.usageMemory",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 51,
+      "symbol": "Hardware.UsageMemory",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 53,
+      "symbol": "Hardware.UsageMemory.current",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 54,
+      "symbol": "Hardware.UsageMemory.total",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 60,
+      "symbol": "Hardware",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 62,
+      "symbol": "Hardware.diskSize",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 66,
+      "symbol": "Hardware.diskFreeSize",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 75,
+      "symbol": "Hardware",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Hardware.swift",
+      "line": 77,
+      "symbol": "Hardware.platform",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Logger.swift",
+      "line": 10,
+      "symbol": "Logger",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Logger.swift",
+      "line": 12,
+      "symbol": "Logger.isDebug",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Logger.swift",
+      "line": 13,
+      "symbol": "Logger.saveHandler",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 12,
+      "symbol": "Network",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 15,
+      "symbol": "Network.status",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 52,
+      "symbol": "Network.Status",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 53,
+      "symbol": "Network.Status.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 54,
+      "symbol": "Network.Status.notReachable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 55,
+      "symbol": "Network.Status.wwan(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 56,
+      "symbol": "Network.Status.wifi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 59,
+      "symbol": "Network.Cellular",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 101,
+      "symbol": "Network",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Network.swift",
+      "line": 140,
+      "symbol": "Network.internetIP",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 11,
+      "symbol": "Notify",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 15,
+      "symbol": "Notify.Name",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 18,
+      "symbol": "Notify.Name.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 23,
+      "symbol": "Notify.remove(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 27,
+      "symbol": "Notify.remove(_:name:object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 31,
+      "symbol": "Notify.remove(_:name:object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 35,
+      "symbol": "Notify.post(name:object:userInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 39,
+      "symbol": "Notify.post(name:object:userInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 43,
+      "symbol": "Notify.add(name:object:queue:usingblock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 48,
+      "symbol": "Notify.add(name:object:queue:usingblock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 53,
+      "symbol": "Notify.add(_:selector:name:object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Notify.swift",
+      "line": 57,
+      "symbol": "Notify.add(_:selector:name:object:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 33,
+      "symbol": "SignedInteger.int",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 34,
+      "symbol": "SignedInteger.float",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 35,
+      "symbol": "SignedInteger.double",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 36,
+      "symbol": "SignedInteger.cgFloat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 41,
+      "symbol": "FloatingPoint.int",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 42,
+      "symbol": "FloatingPoint.float",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 45,
+      "symbol": "FloatingPoint.cgFloat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Number.swift",
+      "line": 46,
+      "symbol": "FloatingPoint.double",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Operator.swift",
+      "line": 21,
+      "symbol": "-->(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Operator.swift",
+      "line": 27,
+      "symbol": "<--(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Operator.swift",
+      "line": 33,
+      "symbol": "<--(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QR.swift",
+      "line": 20,
+      "symbol": "QR",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QR.swift",
+      "line": 34,
+      "symbol": "QR.Model",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QR.swift",
+      "line": 54,
+      "symbol": "QR.Model.init(text:scale:logo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QR.swift",
+      "line": 156,
+      "symbol": "QR.create(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 12,
+      "symbol": "QRScanner",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 19,
+      "symbol": "QRScanner.metadataObjectTypes",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 29,
+      "symbol": "QRScanner.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 77,
+      "symbol": "QRScanner.designPreview(design:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 81,
+      "symbol": "QRScanner.startRunning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 85,
+      "symbol": "QRScanner.stopRunning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 90,
+      "symbol": "QRScanner",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 92,
+      "symbol": "QRScanner.metadataOutput(_:didOutput:from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 103,
+      "symbol": "QRScanner",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/QRScanner.swift",
+      "line": 105,
+      "symbol": "QRScanner.captureOutput(_:didDrop:from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/String.swift",
+      "line": 15,
+      "symbol": "String.replace(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/String.swift",
+      "line": 102,
+      "symbol": "String.int",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/String.swift",
+      "line": 103,
+      "symbol": "String.float",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/String.swift",
+      "line": 104,
+      "symbol": "String.double",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/String.swift",
+      "line": 119,
+      "symbol": "String.filePath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Sugar.swift",
+      "line": 17,
+      "symbol": "Sugar.with(sugar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Sugar.swift",
+      "line": 26,
+      "symbol": "Sugar.do(sugar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Sugar.swift",
+      "line": 30,
+      "symbol": "Sugar.do(sugar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Sugar.swift",
+      "line": 47,
+      "symbol": "Sugar.end()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Sugar.swift",
+      "line": 78,
+      "symbol": "Sugar.with(sugar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 19,
+      "symbol": "UIButton.titleOfNormal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 24,
+      "symbol": "UIButton.titleOfHighlight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 29,
+      "symbol": "UIButton.titleOfSelect",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 34,
+      "symbol": "UIButton.titleOfDisable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 72,
+      "symbol": "UIButton.imageOfNormal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 77,
+      "symbol": "UIButton.imageOfSelect",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 82,
+      "symbol": "UIButton.imageOfDisable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 87,
+      "symbol": "UIButton.imageOfHighlight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 124,
+      "symbol": "UIButton.titleColorOfNormal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 129,
+      "symbol": "UIButton.titleColorOfSelect",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 134,
+      "symbol": "UIButton.titleColorOfHighlight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 139,
+      "symbol": "UIButton.titleColorOfDisable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 176,
+      "symbol": "UIButton.backgroundImageOfNormal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 181,
+      "symbol": "UIButton.backgroundImageOfSelect",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 186,
+      "symbol": "UIButton.backgroundImageOfHighlight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIButton.swift",
+      "line": 191,
+      "symbol": "UIButton.backgroundImageOfDisable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIView.swift",
+      "line": 56,
+      "symbol": "UIView.x",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIView.swift",
+      "line": 62,
+      "symbol": "UIView.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIView.swift",
+      "line": 68,
+      "symbol": "UIView.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIView.swift",
+      "line": 73,
+      "symbol": "UIView.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIView.swift",
+      "line": 146,
+      "symbol": "RxAction",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/UIView.swift",
+      "line": 148,
+      "symbol": "RxAction",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Weakly.swift",
+      "line": 10,
+      "symbol": "Weakly",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Weakly.swift",
+      "line": 14,
+      "symbol": "Weakly.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Weakly.swift",
+      "line": 21,
+      "symbol": "Array.contains(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/apple/Desktop/project/wy/MyBase/MyBase/Weakly.swift",
+      "line": 25,
+      "symbol": "Array.strongReference()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/apple/Desktop/project/wy/MyBase"
+}

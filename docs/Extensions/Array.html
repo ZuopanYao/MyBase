@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Array" class="dashAnchor"></a>
+    <a title="Array Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MyBase 0.4.9 Docs</a> (44% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MyBase Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Array Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/App.html">App</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/App/Version.html">– Version</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/App/Path.html">– Path</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/App/Bundle.html">– Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/App/Sign.html">– Sign</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore.html">AppStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Result.html">– Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/AppInfo.html">– AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Review.html">– Review</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Feed.html">– Feed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Comment.html">– Comment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/LinkAttributes.html">– LinkAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Author.html">– Author</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/ContentTypeAttributes.html">– ContentTypeAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/ContentAttributes.html">– ContentAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/ContentType.html">– ContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Link.html">– Link</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppStore/Value.html">– Value</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/File.html">File</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/File/Size.html">– Size</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FilePath.html">FilePath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Network.html">Network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Network/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Network/Cellular.html">– Cellular</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Notify.html">Notify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Notify/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/QR.html">QR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/QR/Model.html">– Model</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/QRScanner.html">QRScanner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Weakly.html">Weakly</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:6MyBase5today10Foundation4DateVvp">today</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@CGPoint">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@CGRect">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@CGSize">CGSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@CGVector">CGVector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/Format.html">– Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/Unit.html">– Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/Week.html">– Week</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary/Values.html">– Values</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/FloatingPoint.html">FloatingPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@NSDirectionalEdgeInsets">NSDirectionalEdgeInsets</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSObject">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SignedInteger.html">SignedInteger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@UIEdgeInsets">UIEdgeInsets</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@S@UIOffset">UIOffset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase3ssgoiyySb_yyXKtF">--&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase3lssoiySbyyXK_SbtF">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase3lssoiyySb_yyXKtF">&lt;--(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase5async2on5delay5blockySo17OS_dispatch_queueC_SdyyctF">async(on:delay:block:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase10concurrent_5tasks10doneNotifyySS_SayyycGSo17OS_dispatch_queueC2on_yyc5blocktSgtF">concurrent(_:tasks:doneNotify:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase8costTime5blockyyyXE_tF">costTime(block:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase5isNilySbypSgF">isNil(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase7isValueySbypSgF">isValue(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase4puts_4file6method4lineyypd_S2SSitF">puts(_:file:method:line:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase5queue_5delay7executeySo012OS_dispatch_C0C_SdyyctF">queue(_:delay:execute:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase6serial_5tasks10doneNotifyySS_SayyycGSo17OS_dispatch_queueC2on_yyc5blocktSgtF">serial(_:tasks:doneNotify:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase8uiThread5delay7executeySd_yyctF">uiThread(delay:execute:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6MyBase2ttoiySbSS_SStF">~~(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Constant.html">Constant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RxAction.html">RxAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Sugar.html">Sugar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Device.html">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Device/OS.html">– OS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hardware.html">Hardware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hardware/Unit.html">– Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hardware/UsageMemory.html">– UsageMemory</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Array</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Array</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">Numeric</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">SignedInteger</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">FloatingPoint</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt">Int</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt"><a href="../Classes/Weakly.html">Weakly</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseEySayxGSnySiGcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseEySayxGSnySiGcip">subscript(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>数组切片</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">bounds</span><span class="p">:</span> <span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseE5split2atSayxG_ADtSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/split(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseE5split2atSayxG_ADtSi_tF">split(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>从指定位置将数组分割成2个数组</p>
+<h1 id='example' class='heading'>Example</h1>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="nf">let</span> <span class="p">(</span><span class="n">before</span><span class="p">,</span> <span class="n">after</span><span class="p">)</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">split</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">before</span><span class="p">)</span>   <span class="c1">/// [1, 2, 3, 4, 5]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">after</span><span class="p">)</span>    <span class="c1">/// [6, 7, 8, 9, 10]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">split</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">([</span><span class="kt">Element</span><span class="p">],</span> <span class="p">[</span><span class="kt">Element</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>at</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>分割位置在第几个元素后</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>元组</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseE6middle5count7isFloorSayxGSi_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/middle(count:isFloor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseE6middle5count7isFloorSayxGSi_SbtF">middle(count:<wbr>isFloor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>从数组中间开始，往两端取元素</p>
+<h1 id='example' class='heading'>Example</h1>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="nf">middle</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="mi">4</span><span class="p">))</span>                <span class="c1">/// [4, 5, 6, 7]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="nf">middle</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">isFloor</span><span class="p">:</span> <span class="kc">true</span><span class="p">))</span> <span class="c1">/// [4, 5, 6]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="nf">middle</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">isFloor</span><span class="p">:</span> <span class="kc">false</span><span class="p">))</span><span class="c1">/// [5, 6, 7]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">middle</span><span class="p">(</span><span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">isFloor</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>count</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>取多少个元素</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isFloor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>计算下标时非偶数时取整方式，默认 true (向下取整)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>数组</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseE5split4withSaySayxGGSaySnySiGG_tF"></a>
+                    <a name="//apple_ref/swift/Method/split(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseE5split4withSaySayxGGSaySnySiGG_tF">split(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>数组切片</p>
+<h1 id='example' class='heading'>Example</h1>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">results</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">split</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="o">..&lt;</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="o">..&lt;</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="o">..&lt;</span><span class="n">array</span><span class="o">.</span><span class="n">count</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1">/// [1, 2, 3]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">/// [4, 5]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="c1">/// [6, 7]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="c1">/// [8, 9, 10]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">split</span><span class="p">(</span><span class="n">with</span> <span class="nv">rangeIndexs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[[</span><span class="kt">Element</span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rangeIndexs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[Range<Int>]，区间分割下标</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>[[Element]]</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%3A%20%60Numeric%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element`: `Numeric`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%3A%20%60Numeric%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Element</code>: <code>Numeric</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseSjRzlE3sumxyF"></a>
+                    <a name="//apple_ref/swift/Method/sum()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseSjRzlE3sumxyF">sum()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>数组求和</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sum</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Element</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%3A%20%60SignedInteger%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element`: `SignedInteger`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%3A%20%60SignedInteger%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Element</code>: <code>SignedInteger</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseSZRzlE3avgxyF"></a>
+                    <a name="//apple_ref/swift/Method/avg()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseSZRzlE3avgxyF">avg()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>数组平均值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">avg</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Element</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%3A%20%60FloatingPoint%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element`: `FloatingPoint`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%3A%20%60FloatingPoint%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Element</code>: <code>FloatingPoint</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseSFRzlE3avgxyF"></a>
+                    <a name="//apple_ref/swift/Method/avg()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseSFRzlE3avgxyF">avg()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>数组平均值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">avg</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Element</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%20%3D%3D%20%60Int%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element` == `Int`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3D%3D%20%60Int%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Element</code> == <code>Int</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseSiRszlE6strideSaySiGvp"></a>
+                    <a name="//apple_ref/swift/Property/stride" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseSiRszlE6strideSaySiGvp">stride</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stride</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">stride</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseSiRszlE7throughSaySiGvp"></a>
+                    <a name="//apple_ref/swift/Property/through" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseSiRszlE7throughSaySiGvp">through</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stride with through</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">through</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%3A%20%60Codable%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element`: `Codable`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%3A%20%60Codable%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Element</code>: <code>Codable</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseSeRzSERzlE6encodeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/encode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseSeRzSERzlE6encodeSSSgvp">encode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encode to string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">encode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%20%3D%3D%20%60Weakly%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element` == `Weakly`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3D%3D%20%60Weakly%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Element</code> == <code><a href="../Classes/Weakly.html">Weakly</a></code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseAA6WeaklyCRszlE8containsySbSo8NSObjectCF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseAA6WeaklyCRszlE8containsySbSo8NSObjectCF">contains(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa6MyBaseAA6WeaklyCRszlE15strongReferenceSayACGyF"></a>
+                    <a name="//apple_ref/swift/Method/strongReference()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa6MyBaseAA6WeaklyCRszlE15strongReferenceSayACGyF">strongReference()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">strongReference</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://gitee.com/harvey520/common" target="_blank" rel="external">ZuopanYao</a>. All rights reserved. (Last updated: 2021-08-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
