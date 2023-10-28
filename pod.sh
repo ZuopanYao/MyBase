@@ -9,7 +9,7 @@ if [ -z "$1" ]; then
 fi
 
 MODULE='MyBase'
-SPECS='wyspecs-ios'
+SPECS='Specs'
 
 cp podspec.example $MODULE.podspec
 REPLACE=`sed "s/{v}/$1/g" $MODULE.podspec`
@@ -36,6 +36,6 @@ cp ../$MODULE/$MODULE.podspec $MODULE/$1/$MODULE.podspec
 git add *
 git commit -m "$MODULE-$1"
 git push
-git push wy master
+#git push wy master
 
 echo 'Done'
