@@ -24,15 +24,22 @@ public class QRScanner: NSObject {
     ]
     
     /// 是否拥有访问摄像头权限
-    public var isCanAccess: Bool = false
+    public private(set) var isCanAccess: Bool = AVCaptureDevice.authorizationStatus(for: .video) == .authorized
     
     public override init() {
         super.init()
         
+        if isCanAccess {
+            prepare()
+        }
+    }
+    
+    public func requestAccess(done: @escaping (Bool) -> Void) {
         AVCaptureDevice.requestAccess(for: AVMediaType.video) { (isSuccess) in
             self.isCanAccess = isSuccess
-            guard isSuccess else { return puts("无权访问摄像机") }
+            guard self.isCanAccess else { return puts("没有权限访问摄像头")  }
             self.prepare()
+            done(isSuccess)
         }
     }
     
