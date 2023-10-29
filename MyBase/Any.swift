@@ -17,8 +17,10 @@ public func isNil(_ any: Any?) -> Bool {
 
 /// 判断可选类型是否有值
 public func isValue(_ any: Any?) -> Bool {
-    switch any {
-    case .none: return false
-    case .some: return true
-    }
+    return isNil(any) == false
+}
+
+/// 判断字符串是否有值(非空值)
+public func isRealValue(_ any: String?) -> Bool {
+    return isValue(any) && any!.count > 0
 }

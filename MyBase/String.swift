@@ -59,10 +59,10 @@ public extension String {
         return "\(String(cString: ch).prefix(count))"
     }
     
-    /// start 表示开始下标， end 表示结束下标
-    subscript(start: Int, end: Int) -> String {
+    /// start 表示开始下标， length 截取长度
+    subscript(start: Int, length: Int) -> String {
         let start = index(startIndex, offsetBy: start)
-        let end = index(start, offsetBy: end)
+        let end = index(start, offsetBy: length)
         return "\(self[start..<end])"
     }
     
@@ -161,5 +161,54 @@ public extension String {
     func date(_ format: Date.Format = .middle) -> Date? {
         Date.formatter.dateFormat = format.rawValue
         return Date.formatter.date(from: self)
+    }
+}
+
+extension String {
+    
+    private static let hexMatch: [String: Int] = [
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "A": 10,
+        "B": 11,
+        "C": 12,
+        "D": 13,
+        "E": 14,
+        "F": 15
+    ]
+    /// 将十六进制字符串转换成十进制数值
+    public var hexToDecimal: Int {
+        var decimal = 0
+        guard var cchars = cString(using: .utf8) else { return decimal }
+        
+        cchars.removeLast()
+        cchars.reverse()
+        
+        // 删除`#`
+        if cchars.last == 35 {
+            cchars.removeLast()
+        }
+        
+        for (index, char) in cchars.enumerated() {
+            let key = String(format: "%c", char).uppercased()
+            let value = String.hexMatch[key] ?? 0
+
+            if index == 0 {
+                decimal = value
+                continue
+            }
+            
+            let powValue = pow(16.0, Double(index)).int * value
+            decimal += powValue
+        }
+        return decimal
     }
 }

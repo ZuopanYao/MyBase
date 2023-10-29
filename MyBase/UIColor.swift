@@ -41,4 +41,25 @@ extension UIColor {
         
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
+    
+    /// 十六进制颜色 e.g. #FFFF99
+    /// - Parameters:
+    ///   - value: 十六进制颜色
+    ///   - alpha: 不透明度，范围 [0.0, 1.0], 默认为 1.0
+    public convenience init(hex value: String, alpha: Float = 1.0) {
+        let hexValue = value.replace("#", "")
+        guard hexValue.count == 6 else {
+            fatalError("十六进制颜色长度应该为6.")
+        }
+        
+        let redValue = hexValue[0, 2]
+        let greenValue = hexValue[2, 2]
+        let blueValue = hexValue[4, 2]
+
+        let red = UInt(redValue.hexToDecimal)
+        let green = UInt(greenValue.hexToDecimal)
+        let blue = UInt(blueValue.hexToDecimal)
+
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    }
 }
