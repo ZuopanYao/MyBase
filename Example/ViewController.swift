@@ -21,95 +21,47 @@ struct Model: Codable {
     init() { }
 }
 
-struct MyParam: Constant {
-    
-//    static var tabBarHeight: CGFloat {
-//        65.0
-//    }
-}
+struct My: Constant {
 
+}
 
 class ViewController: UIViewController {
     
     let disposeBag: DisposeBag = .init()
     static weak var weakSelf: ViewController?
     
+    var str1: String?
+    let str2: String? = ""
+    let str3: String? = "kkff"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         Self.weakSelf = self
         
-        view.addSubview(UILabel.then {
-            $0.backgroundColor = .red
-            $0.text = "Reviews"
-            $0.frame = CGRect(x: 10, y: 150, width: 200, height: 30)
-            $0.click = { _ in
-                
-                /// 用户评论页
-                AppStore.showUserReviews("444934666")
-            }
-        })
+        view.addSubview(UIButton.then(.init(type: .custom)) {
+            $0.titleOfNormal = "测试"
+            $0.titleColorOfNormal = .red
+            $0.rx.tap.subscribe(onNext: onAction).disposed(by: disposeBag)
+        }, constraints: [.top(100), .leading(), .trailing(), .height(100)])
         
-        view.addSubview(UILabel.then {
-            $0.backgroundColor = .red
-            $0.text = "Write Review"
-            $0.frame = CGRect(x: 10, y: 200, width: 200, height: 30)
-            
-            $0.click = { _ in
-                /// 评论编辑页
-                AppStore.showWriteReview("444934666")
-            }
-        })
         
-        view.addSubview(UILabel.then {
-            $0.backgroundColor = .red
-            $0.text = "Update"
-            $0.frame = CGRect(x: 10, y: 250, width: 200, height: 30)
-            
-            $0.click = { _ in
-                AppStore.show("444934666", from: self)
-            }
-        })
+        let v = UIView(frame: CGRect(x: 0, y: 40, width: 320, height: 60))
+        v.backgroundColor = UIColor(hex: 0xffee22)
+        
+        let vv = UIView(frame: CGRect(x: 0, y: 100, width: 320, height: 60))
+        vv.backgroundColor = UIColor(hex: "#ffee22")
+        
+        view.addSubview(v)
+        view.addSubview(vv)
 
-        costTime {
-            let index: String = "10"
-            if index == "1" {
-                puts("it's ok")
-            }
+        let block: () -> Void = {
+            print("没有权限访问摄像头")
         }
         
-        costTime {
-            let index: Int = 10
-            if index == 1 {
-                puts("it's ok")
-            }
-        }
+     
         
-        AppStore().lookup(appID: "444934666") { _, info in
-        
-            guard let info = info else { return }
-//            guard result.count > 0 else { return puts("app 已下架或不存在") }
-//            let info = result.results.first!
-            print(info.version)
-            print(info.currentVersionReleaseDate)
-            print(info.releaseNotes)
-        }
-        
-        let second = Date.Unit.day(7).second
-        
-//        let df = DateFormatter()
-//        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss-07:00"
-//
-//        AppStore().customerReviews(appID: "444934666", country: "") { (review, comments) in
-//            puts("comments.count = \(comments.count)")
-//            comments.filter {
-//                $0.rating.value.int > 4
-//            }
-//                .forEach { comment in
-//                    puts(comment.updated.value, df.date(from: comment.updated.value)?.format(.long) ?? "nil")
-//                    puts(comment.title.value, comment.content.value, comment.rating.value, comment.author.name.value)
-//            }
-//        }
+        block() <-- QRScanner().isCanAccess --> { print("有权限读取摄像头") }()
     }
     
     deinit {
@@ -118,28 +70,20 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        puts(self.view.safeAreaInsets)
+       
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        puts(MyParam.tabBarHeight)
-        puts(App.shared.keyWindow!.safeAreaInsets)
-
+        
+    
 //        puts("状态栏 ", App.shared.statusBarFrame)
 //        puts("导航栏 ", navigationController?.navigationBar.bounds)
 //        puts("标签栏 ", tabBarController?.tabBar.bounds)
 
     }
     
-    @objc func dodo(event: Any?){
-        puts("kkkkk ----")
-    }
-    
-    func dodolab(event: Event<UILabel>){
-        puts("kkkkk UILabel\(event.element!)")
-    }
-    
-    func dodobtn(event: Event<UIButton>){
-        puts("UIButton\(event.element!)")
+    func onAction(){
+        let str = "#eebbff"
+        print("\(str.hexToDecimal)")
     }
 }

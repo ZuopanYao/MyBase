@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,6 +49,7 @@
 		1848842826678B0B00021D53 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848842726678B0B00021D53 /* Any.swift */; };
 		1867322F26AE8D3F004CD438 /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867322E26AE8D3F004CD438 /* FilePath.swift */; };
 		7694FEB15D7DDBCFF136976D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDB680DB939A307352F5B2A /* Pods_Example.framework */; };
+		B9736D0F2AED652300046069 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9736D0E2AED652200046069 /* RxView.swift */; };
 		B9BDB2E0265945F7003310B7 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BDB2DF265945F7003310B7 /* Codable.swift */; };
 		BA5F3C3487577F5B7376F9E6 /* Pods_MyBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CBDDC8A7076A64B11635C1 /* Pods_MyBase.framework */; };
 /* End PBXBuildFile section */
@@ -125,6 +126,7 @@
 		2C2AB71D9601016A781EF156 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		50CBDDC8A7076A64B11635C1 /* Pods_MyBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88744F55B21C842D557503FD /* Pods-MyBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBase.debug.xcconfig"; path = "Target Support Files/Pods-MyBase/Pods-MyBase.debug.xcconfig"; sourceTree = "<group>"; };
+		B9736D0E2AED652200046069 /* RxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
 		B9BDB2DF265945F7003310B7 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		BB11F5AE07240E99E15AD88A /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		EEDB680DB939A307352F5B2A /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				1838E03C265369C5006D4AC0 /* Data.swift */,
 				1838E03F265369D9006D4AC0 /* Date.swift */,
 				1838E0202653672A006D4AC0 /* Device.swift */,
+				B9736D0E2AED652200046069 /* RxView.swift */,
 				1838E03626536997006D4AC0 /* Dictionary.swift */,
 				1838E01626536534006D4AC0 /* File.swift */,
 				1867322E26AE8D3F004CD438 /* FilePath.swift */,
@@ -455,6 +458,7 @@
 				1838E03126536917006D4AC0 /* String.swift in Sources */,
 				1838E043265369F2006D4AC0 /* Array.swift in Sources */,
 				1845E5DA267B42B000463607 /* QR.swift in Sources */,
+				B9736D0F2AED652300046069 /* RxView.swift in Sources */,
 				1845AB4826C4C5A6006F682F /* My.swift in Sources */,
 				1838E05A26538DE3006D4AC0 /* Operator.swift in Sources */,
 				1845E5ED267B4F7500463607 /* QRScanner.swift in Sources */,

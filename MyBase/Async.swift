@@ -8,33 +8,36 @@
 
 import Foundation
 
-/// 异步执行
-/// - Parameters:
-///   - workQueue: 在哪个线程上执行，默认为主线程
-///   - delay: 延迟执行，单位秒，默认 0.0
-///   - block: 做些事情
-@available(iOS, deprecated: 10.0, message: "Use queue(_:delay:execute:) instead")
-public func async(on workQueue: DispatchQueue = .main, delay: TimeInterval = 0.0, block: @escaping (() -> Void)) {
-    guard delay > 0.0 else { return workQueue.async(execute: block) }
-    workQueue.asyncAfter(wallDeadline: .now() + delay, execute: block)
+public var async = Async()
+public struct Async {
+    
+    init() { }
+    
+    public typealias Work = () -> Void
+    
+    private var queue: DispatchQueue = .main
+    
+    /// 当 label 为空时，使用全局队列
+    public mutating func global(_ label: String = "") -> Self {
+        self.queue = label.count > 0 ? .global : .create(label)
+        return self
+    }
+    
+    public func delay(_ delay: TimeInterval, work: @escaping Work) {
+        queue.asyncAfter(wallDeadline: .now() + delay, execute: work)
+    }
+    
+    public func work(_ work: @escaping Work) {
+        queue.async(execute: work)
+    }
 }
 
-/// 异步执行
-/// - Parameters:
-///   - workQueue: 在哪个线程上执行
-///   - delay: 延迟执行，单位秒，默认 0.0
-///   - execute: 做些事情
-public func queue(_ workQueue: DispatchQueue, delay: TimeInterval = 0.0, execute: @escaping (() -> Void)) {
-    guard delay > 0.0 else { return workQueue.async(execute: execute) }
-    workQueue.asyncAfter(wallDeadline: .now() + delay, execute: execute)
-}
-
-@inlinable public func uiThread(delay: TimeInterval = 0.0, execute: @escaping (() -> Void)) {
-    queue(.main, delay: delay, execute: execute)
-}
-
-public extension DispatchQueue {
-    static let global: DispatchQueue = .global()
+extension DispatchQueue {
+    static let global = DispatchQueue.global()
+    
+    static func create(_ label: String) -> DispatchQueue {
+        return DispatchQueue(label: label, qos: .default)
+    }
 }
 
 /// 并发队列
