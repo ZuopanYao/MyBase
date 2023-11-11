@@ -259,3 +259,32 @@ extension UIView {
         layer.addSublayer(shapeLayer)
     }
 }
+
+extension UIView {
+    
+    /// 添加遮罩
+    ///
+    /// - Parameters:
+    ///   - frame: 遮罩在父视图的位置
+    ///   - bgColor: 遮罩背景颜色
+    ///   - hollowRect: 留出镂空区域，在遮罩中的位置
+    public func addShade(
+        _ frame: CGRect = UIScreen.main.bounds,
+        bgColor: UIColor = UIColor.black.withAlphaComponent(0.2),
+        hollowRect: CGRect) {
+            
+            let rect = CGRect(origin: .zero, size: frame.size)
+            let maskView = UIView(frame: frame)
+            maskView.mask = UIView(frame: rect)
+            maskView.backgroundColor = bgColor
+            addSubview(maskView)
+            
+            let maskLayer = CAShapeLayer()
+            maskLayer.fillRule = .evenOdd
+            maskView.mask?.layer.addSublayer(maskLayer)
+            
+            let path = CGMutablePath(rect: rect, transform: .none)
+            path.addRect(hollowRect)
+            maskLayer.path = path
+        }
+}

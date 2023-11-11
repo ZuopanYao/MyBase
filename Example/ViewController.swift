@@ -51,20 +51,14 @@ class ViewController: UIViewController {
         
         let vv = UIView(frame: CGRect(x: 0, y: 100, width: 320, height: 60))
 //        vv.backgroundColor = UIColor.gray
-        view.addSubview(vv)
+//        view.addSubview(vv)
         
-        DispatchQueue.main.async {
-            
-        }
-        
+       
         var config = UIView.DrawConfig.default
         config.strokeColor = .red
 //        config.lineDashPattern = (4, 4)
         
-        vv.drawLines([
-            (CGPoint(x: 12, y: 10), CGPoint(x: 333, y: 10)),
-            (CGPoint(x: 50, y: 0), CGPoint(x: 50, y: 40))
-        ], config: config)
+        view.addShade(hollowRect: .init(x: 100, y: 200, width: 200, height: 200))
     }
     
     deinit {
