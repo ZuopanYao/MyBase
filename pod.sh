@@ -37,6 +37,6 @@ git commit -m "$MODULE-$1"
 git push
 
 # cocoapods Specs
-pod trunk push MyBase.podspec
+pod trunk push "../$MODULE/$MODULE.podspec" --allow-warnings
 
 echo 'Done'
