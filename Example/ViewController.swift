@@ -39,29 +39,32 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         Self.weakSelf = self
         
-        view.addSubview(UIButton.then(.init(type: .custom)) {
-            $0.titleOfNormal = "测试"
-            $0.titleColorOfNormal = .red
-            $0.rx.tap.subscribe(onNext: onAction).disposed(by: disposeBag)
-        }, constraints: [.top(100), .leading(), .trailing(), .height(100)])
+//        view.addSubview(UIButton.then(.init(type: .custom)) {
+//            $0.titleOfNormal = "测试"
+//            $0.titleColorOfNormal = .red
+//            $0.rx.tap.subscribe(onNext: onAction).disposed(by: disposeBag)
+//        }, constraints: [.top(100), .leading(), .trailing(), .height(100)])
+//        
         
-        
-        let v = UIView(frame: CGRect(x: 0, y: 40, width: 320, height: 60))
-        v.backgroundColor = UIColor(hex: 0xffee22)
+//        let v = UIView(frame: CGRect(x: 0, y: 40, width: 320, height: 60))
+//        v.backgroundColor = UIColor(hex: 0xffee22)
         
         let vv = UIView(frame: CGRect(x: 0, y: 100, width: 320, height: 60))
-        vv.backgroundColor = UIColor(hex: "#ffee22")
-        
-        view.addSubview(v)
+//        vv.backgroundColor = UIColor.gray
         view.addSubview(vv)
-
-        let block: () -> Void = {
-            print("没有权限访问摄像头")
+        
+        DispatchQueue.main.async {
+            
         }
         
-     
+        var config = UIView.DrawConfig.default
+        config.strokeColor = .red
+//        config.lineDashPattern = (4, 4)
         
-        block() <-- QRScanner().isCanAccess --> { print("有权限读取摄像头") }()
+        vv.drawLines([
+            (CGPoint(x: 12, y: 10), CGPoint(x: 333, y: 10)),
+            (CGPoint(x: 50, y: 0), CGPoint(x: 50, y: 40))
+        ], config: config)
     }
     
     deinit {

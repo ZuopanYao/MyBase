@@ -8,34 +8,35 @@
 
 import Foundation
 
-public var async = Async()
 public struct Async {
-    
-    init() { }
+    /// 主线程
+    public static let main = Async(.main)
+    /// 全局队列
+    public static let global = Async(.global)
     
     public typealias Work = () -> Void
     
-    private var queue: DispatchQueue = .main
-    
-    /// 当 label 为空时，使用全局队列
-    public mutating func global(_ label: String = "") -> Self {
-        self.queue = label.count > 0 ? .global : .create(label)
-        return self
+    private let queue: DispatchQueue
+    public init(_ queue: DispatchQueue) {
+        self.queue = queue
     }
     
-    public func delay(_ delay: TimeInterval, work: @escaping Work) {
-        queue.asyncAfter(wallDeadline: .now() + delay, execute: work)
+    public func delay(_ delay: TimeInterval, `do`: @escaping Work) {
+        // swiftlint:disable:previous identifier_name
+        queue.asyncAfter(wallDeadline: .now() + delay, execute: `do`)
     }
     
-    public func work(_ work: @escaping Work) {
-        queue.async(execute: work)
+    public func `do`(_ do: @escaping Work) {
+        // swiftlint:disable:previous identifier_name
+        queue.async(execute: `do`)
     }
 }
 
 extension DispatchQueue {
     static let global = DispatchQueue.global()
     
-    static func create(_ label: String) -> DispatchQueue {
+    /// 创建一个新队列
+    public static func create(_ label: String) -> DispatchQueue {
         return DispatchQueue(label: label, qos: .default)
     }
 }

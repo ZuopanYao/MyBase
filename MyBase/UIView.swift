@@ -195,3 +195,67 @@ extension UIView {
         return UIGraphicsGetImageFromCurrentImageContext()
     }
 }
+
+extension UIView {
+    
+    public typealias LineData = (start: CGPoint, end: CGPoint)
+    
+    public struct DrawConfig {
+        public typealias DashPattern = (dotWidth: CGFloat, dotSpacing: CGFloat)
+        
+        public var fillColor: UIColor
+        public var strokeColor: UIColor?
+        public var lineWidth: CGFloat
+        public var fillRule: CAShapeLayerFillRule
+        public var lineCap: CAShapeLayerLineCap
+        public var lineJoin: CAShapeLayerLineJoin
+        public var lineDashPattern: DashPattern?
+        
+        public init(fillColor: UIColor = .black, 
+                    strokeColor: UIColor? = nil,
+                    lineWidth: CGFloat = 1.0,
+                    fillRule: CAShapeLayerFillRule = .nonZero,
+                    lineCap: CAShapeLayerLineCap = .butt,
+                    lineJoin: CAShapeLayerLineJoin = .round,
+                    lineDashPattern: DashPattern? = nil) {
+            self.fillColor = fillColor
+            self.strokeColor = strokeColor
+            self.lineWidth = lineWidth
+            self.fillRule = fillRule
+            self.lineCap = lineCap
+            self.lineJoin = lineJoin
+            self.lineDashPattern = lineDashPattern
+        }
+        
+        var dashPattern: [NSNumber]? {
+            guard let lineDashPattern = lineDashPattern else { return nil }
+            return [NSNumber(value: lineDashPattern.dotWidth), NSNumber(value: lineDashPattern.dotSpacing)]
+        }
+        
+        public static let `default` = DrawConfig()
+    }
+    
+    /// 画线
+    public func drawLines(_ lineDatas: [LineData], config: DrawConfig) {
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.lineWidth = config.lineWidth
+        shapeLayer.lineJoin = config.lineJoin
+        shapeLayer.lineCap = config.lineCap
+        shapeLayer.lineDashPattern = config.dashPattern
+        
+        shapeLayer.fillRule = config.fillRule
+        shapeLayer.fillColor = config.fillColor.cgColor
+        shapeLayer.strokeColor = config.strokeColor?.cgColor
+        
+        // 设置绘制的路径
+        let path = UIBezierPath()
+        lineDatas.forEach { (start: CGPoint, end: CGPoint) in
+            path.move(to: start)
+            path.addLine(to: end)
+        }
+        
+        shapeLayer.path = path.cgPath
+        layer.addSublayer(shapeLayer)
+    }
+}
